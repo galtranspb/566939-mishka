@@ -39,62 +39,62 @@
     <section class="order">
       <h1 class="order__title">Вязание на заказ</h1>
       <p class="order__content">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="knitting-form order__knitting-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="product-type-form knitting-form__product-type-form">
-          <legend class="product-type-form__title">Тип</legend>
-          <input class="product-type-form__input-radio" id="interior-field" name="type-of-product" type="radio" value="interior" checked>
-          <label class="product-type-form__label" for="interior-field">Аксессуар для интерьера</label>
-          <input class="product-type-form__input-radio" id="toys-field" name="type-of-product" type="radio" value="toys">
-          <label class="product-type-form__label" for="toys-field">Детская игрушка</label>
+      <form class="form order__knitting-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__group">
+          <legend class="form__legend">Тип</legend>
+          <input class="form__input-radio" id="interior-field" name="type-of-product" type="radio" value="interior" checked>
+          <label class="form__label" for="interior-field">Аксессуар для интерьера</label>
+          <input class="form__input-radio" id="toys-field" name="type-of-product" type="radio" value="toys">
+          <label class="form__label" for="toys-field">Детская игрушка</label>
         </fieldset>
-        <fieldset class="color-form knitting-form__color-form">
-          <legend class="color-form__title">Цвет</legend>
-          <input class="color-form__checkbox" id="white-field" name="white" type="checkbox" checked>
-          <label class="color-form__label" for="white-field">Белый</label>
-          <input class="color-form__checkbox" id="gray-field" name="gray" type="checkbox" checked>
-          <label class="color-form__label" for="gray-field">Серый</label>
-          <input class="color-form__checkbox" id="tiffany-field" name="tiffany" type="checkbox">
-          <label class="color-form__label" for="tiffany-field">&laquo;Тиффани&raquo;</label>
-          <input class="color-form__checkbox" id="black-field" name="black" type="checkbox">
-          <label class="color-form__label" for="black-field">Черный</label>
-          <input class="color-form__checkbox" id="pink-field" name="pink" type="checkbox">
-          <label class="color-form__label" for="pink-field">Розовый</label>
-          <input class="color-form__checkbox" id="orange-field" name="orange" type="checkbox">
-          <label class="color-form__label" for="orange-field">Оранжевый</label>
+        <fieldset class="form__group">
+          <legend class="form__legend">Цвет</legend>
+          <input class="form__input-checkbox" id="white-field" name="white" type="checkbox" checked>
+          <label class="form__label" for="white-field">Белый</label>
+          <input class="form__input-checkbox" id="gray-field" name="gray" type="checkbox" checked>
+          <label class="form__label" for="gray-field">Серый</label>
+          <input class="form__input-checkbox" id="tiffany-field" name="tiffany" type="checkbox">
+          <label class="form__label" for="tiffany-field">&laquo;Тиффани&raquo;</label>
+          <input class="form__input-checkbox" id="black-field" name="black" type="checkbox">
+          <label class="form__label" for="black-field">Черный</label>
+          <input class="form__input-checkbox" id="pink-field" name="pink" type="checkbox">
+          <label class="form__label" for="pink-field">Розовый</label>
+          <input class="form__input-checkbox" id="orange-field" name="orange" type="checkbox">
+          <label class="form__label" for="orange-field">Оранжевый</label>
         </fieldset>
-        <fieldset class="fullname-form knitting-form__fullname-form">
-          <legend class="fullname-form__title">ФИО</legend>
-          <label class="fullname-form__label" for="first-name-field">Имя:</label>
-          <input class="fullname-form__text" name="first-name" id="first-name-field" type="text" placeholder="Введите ваше имя*" required>
-          <label class="fullname-form__label" for="last-name-field">Фамилия:</label>
-          <input class="fullname-form__text" name="last-name" id="last-name-field" type="text" placeholder="Укажите фамилию*" required>
-          <label class="fullname-form__label" for="patronymic-field">Отчество:</label>
-          <input class="fullname-form__text" name="patronymic" id="patronymic-field" type="text" placeholder="Отчество, если желаете">
+        <fieldset class="form__group">
+          <legend class="form__legend">ФИО</legend>
+          <label class="form__label" for="first-name-field">Имя:</label>
+          <input class="form__input-text" name="first-name" id="first-name-field" type="text" placeholder="Введите ваше имя*" required>
+          <label class="form__label" for="last-name-field">Фамилия:</label>
+          <input class="form__input-text" name="last-name" id="last-name-field" type="text" placeholder="Укажите фамилию*" required>
+          <label class="form__label" for="patronymic-field">Отчество:</label>
+          <input class="form__input-text" name="patronymic" id="patronymic-field" type="text" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset class="phone-form knitting-form__phone-form">
-          <legend class="phone-form__title">Тел</legend>
-          <label class="phone-form__label">
-            <input class="phone-form__phone"  type="phone" placeholder="+7 XXX XX XX*" patern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
+        <fieldset class="form__group">
+          <legend class="form__legend">Тел</legend>
+          <label class="form__label">
+            <input class="form__input-tel"  type="tel" placeholder="+7 XXX XX XX*" pattern="\+7([ \-])?d{3}([ \-])?d{2}([ \-])?d{2}" required> <!--Исправить паттерн-->
           </label>
         </fieldset>
-        <fieldset class="email-form knitting-form__email-form">
-          <legend class="email-form__title">E-mail</legend>
-          <label class="email-form__label">
-            <input class="email-form__email"  type="email" placeholder="Ваш Email*" required>
+        <fieldset class="form__group">
+          <legend class="form__legend">E-mail</legend>
+          <label class="form__label">
+            <input class="form__input-email"  type="email" placeholder="Ваш Email*" required>
           </label>
         </fieldset>
-        <fieldset class="comment-form knitting-form__comment-form">
-          <legend class="comment-form__title">Доп</legend>
-          <textarea class="comment-form__textarea" name="comment" id="comment-field">Опишите все ваши пожелания к заказу</textarea>
+        <fieldset class="form__group">
+          <legend class="form__legend">Доп</legend>
+          <textarea class="form__input-textarea" name="comment" id="comment-field">Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
-        <p class="knitting-form__content">*Поля обязательны для заполнения</p>
-        <button class="button knitting-form__button" type="submit">Отправить заказ</button>
+        <p class="form__content">*Поля обязательны для заполнения</p>
+        <button class="button form__button" type="submit">Отправить заказ</button>
       </form>
     </section>
   </main>
 
   <footer class="main-footer">
-    <ul class="social__list main-footer__social">
+    <ul class="social main-footer__social">
       <li class="social__item">
         <a class="social__link social__link--instagram" href="https://www.instagram.com/" target="_blank">Инстаграм</a>
       </li>

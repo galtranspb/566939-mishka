@@ -40,7 +40,9 @@
       <h1 class="catalog__title">Каталог товаров</h1>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Вязаный шерстяной зайчик ростом 30 см и весом 200 г">
+          <a class="catalog__link" href="catalog-itme1.html">
+            <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Вязаный шерстяной зайчик ростом 30 см и весом 200 г">
+          </a>
           <h2 class="catalog__item-title">Зайчик-попрыгайчик</h2>
           <p class="catalog__content">Рост 30 см, вес 200 г</p>
           <p>
@@ -49,7 +51,9 @@
           </p>
         </li>
         <li class="catalog__item">
-          <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Вязаная корзинка для белья диаметром 15 см и высотой 10 см">
+          <a class="catalog__link" href="catalog-item2.html">
+            <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Вязаная корзинка для белья диаметром 15 см и высотой 10 см">
+          </a>
           <h2 class="catalog__item-title">Корзинка для белья</h2>
           <p class="catalog__content">Диаметр 15 см, высота 10 см</p>
           <p>
@@ -58,7 +62,9 @@
           </p>
         </li>
         <li class="catalog__item">
-          <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Вязаная корзинка для игрушек диаметром 30 см и высотой 30 см">
+          <a class="catalog__link" href="catalog-item3.html">
+            <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Вязаная корзинка для игрушек диаметром 30 см и высотой 30 см">
+          </a>
           <h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
           <p class="catalog__content">Диаметр 30 см, высота 30 см</p>
           <p>
@@ -77,10 +83,23 @@
       <p class="process-of-production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
       <a class="button process-of-production__button" href="#">Сделать заказ</a>
     </section>
+    <section class="modal">
+      <h2 class="modal__title">Добваить в корзину</h2>
+      <p class="modal__content">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <input class="visually-hidden" id="size-s" name="product-size" type="checkbox" checked>
+        <label class="modal__label" for="size-s">S</label>
+        <input class="visually-hidden" id="size-m" name="product-size" type="checkbox">
+        <label class="modal__label" for="size-m">M</label>
+        <input class="visually-hidden" id="size-l" name="product-size" type="checkbox">
+        <label class="modal__label" for="size-l">L</label>
+        <button class="button button--modal modal__button" type="submit">Добавить</button>
+      </form>
+    </section>
   </main>
 
   <footer class="main-footer">
-    <ul class="social__list main-footer__social">
+    <ul class="social main-footer__social">
       <li class="social__item">
         <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">Инстаграм</a>
       </li>

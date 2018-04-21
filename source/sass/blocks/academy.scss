@@ -1,0 +1,22 @@
+.academy {
+  width: 27px;
+  height: 34px;
+}
+
+.academy__link {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.academy__imgage {
+  max-width: 100%;
+  height: auto;
+}

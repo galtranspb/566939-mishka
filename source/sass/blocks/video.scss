@@ -1,0 +1,23 @@
+.video {
+  position: relative;
+}
+
+.video__content {
+  width: 260px;
+  height: 150px;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 77px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../../img/icon-play.svg");
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

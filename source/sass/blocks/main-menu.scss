@@ -1,0 +1,31 @@
+.main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-menu__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

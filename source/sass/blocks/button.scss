@@ -1,0 +1,47 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  color: #444;
+  background-color: #fff;
+  border: 2px solid #444;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: #444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444;
+  }
+
+  &--modal {
+    color: #fff;
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+
+    &:hover {
+      color: rgba(99, 209, 187, 1);
+      background-color: #fff;
+    }
+
+    &:active {
+      color: rgba(99, 209, 187, 0.3);
+      background-color: #fff;
+    }
+  }
+}

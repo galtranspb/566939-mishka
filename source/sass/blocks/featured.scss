@@ -1,0 +1,31 @@
+.featured {
+  width: 260px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.featured__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.featured__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featured__item {
+  margin-bottom: 30px;
+  padding-top: 60px;
+}

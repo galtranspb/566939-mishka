@@ -6,6 +6,7 @@
   <title>HTML Academy: Мишка</title>
   <meta name="keywords" content="Вязание, рукоделие">
   <meta name="description" content="Интернет-магазин милых вещей для дома ручной работы">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
   <header class="main-header">
     <div class="logo main-header__logo">
       <a class="logo__link">
-        <img class="logo__image" width="86" height="35" src="http://placehold.it/86x35" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+        <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
       </a>
     </div>
     <nav class="main-nav">
@@ -69,7 +70,7 @@
           </tr>
         </tbody>
       </table>
-      <img class="promotion__image" width="260" height="315" src="http://placehold.it/260x315" alt="Вязаная корзинка серого цвета, диаметром 25 сантиметров и высотой 15 сантиметов">
+      <img class="promotion__image" width="260" height="315" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка серого цвета, диаметром 25 сантиметров и высотой 15 сантиметов">
       <p class="promotion__price">Цена:990 руб.</p>
       <a class="button promotion__button" href="modal.html">Заказать</a>
     </section>
@@ -103,15 +104,21 @@
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__email">e-mail:
-        <span class="contacts__content">info@mimimishkashop.ru</span>
-      </p>
-      <p class="contacts__address">адрес:
-        <span class="contacts__content">г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101</span>
-      </p>
+      <table class="contacts__info">
+        <tbody>
+          <tr>
+            <td class="contacts__email">e-mail:</td>
+            <td class="contacts__email-content">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts__address">адрес:</td>
+            <td class="contacts__address-content">г. Санкт-Петербург,<br> ул. Большая<br>Конюшенная,<br> д. 19/8, офис 101</td>
+          </tr>
+        </tbody>
+      </table>
       <div class="contacts__map">
-        <a class="contacts__link" href="https://yandex.ru/maps/2/saint-petersburg/?mode=search&ol=geo&ll=30.323527%2C59.938674&z=17&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8%2520">
-          <img class="contacts__image" width="322" height="457" src="http://placehold.it/322x457" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная, д. 19/8, офис 101">
+        <a class="contacts__link" href="https://yandex.ru/maps/2/saint-petersburg/?mode=search&ol=geo&ll=30.323527%2C59.938674&z=17&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8%2520" target="_blank">
+          <img class="contacts__image" width="322" height="457" src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная, д. 19/8, офис 101">
         </a>
       </div>
       <a class="button contacts__button" href="feedback-form.html">Напишите нам</a>
@@ -120,11 +127,11 @@
       <h2 class="modal__title">Добваить в корзину</h2>
       <p class="modal__content">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <input class="visually-hidden" id="size-s-field" name="size-s" type="checkbox" checked>
+        <input class="modal__input visually-hidden" id="size-s-field" name="size-s" type="checkbox" checked>
         <label class="modal__label" for="size-s-field">S</label>
-        <input class="visually-hidden" id="size-m-field" name="size-m" type="checkbox">
+        <input class="modal__input visually-hidden" id="size-m-field" name="size-m" type="checkbox">
         <label class="modal__label" for="size-m-field">M</label>
-        <input class="visually-hidden" id="size-l-field" name="size-l" type="checkbox">
+        <input class="modal__input visually-hidden" id="size-l-field" name="size-l" type="checkbox">
         <label class="modal__label" for="size-l-field">L</label>
         <button class="button button--modal modal__button" type="submit">Добавить</button>
       </form>
@@ -134,7 +141,7 @@
   <footer class="main-footer">
     <ul class="social main-footer__social">
       <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/" target="_blank">Инстаграм</a>
+        <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">Инстаграм</a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--facebook" href="https://www.facebook.com/mobile" target="_blank">Фейсбук</a>
@@ -146,8 +153,10 @@
     <div class="copyright main-footer__copyright">
       <b class="copyright__content">Разработано</b>
       <div class="academy copyright__academy">
-        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="academy__image" width="27" height="34" src="http://placehold.it/27x34" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 2">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="academy__image" width="27" height="34" viewBox="0 0 60 60">
+             <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
         </a>
       </div>
     </div>

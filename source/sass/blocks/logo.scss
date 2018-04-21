@@ -1,0 +1,23 @@
+.logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+.logo__link {
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__image {
+  width: 86px;
+  height: 35px;
+}

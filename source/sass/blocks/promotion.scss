@@ -1,0 +1,78 @@
+.promotion {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+  background-color: #fff;
+}
+
+.promotion__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000;
+}
+
+.promotion__event {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #63d1bb;
+}
+
+.promotion__content {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444;
+}
+
+.promotion__characteristics-of-goods {
+  margin-bottom: 25px;
+  border-collapse: collapse;
+}
+
+.promotion__characteristic {
+  width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ececec;
+}
+
+.promotion__value {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ececec;
+}
+
+.promotion__image {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 30px;
+}
+
+.promotion__price {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+  color: #444;
+}

@@ -6,6 +6,7 @@
   <title>Вязание на заказ</title>
   <meta name="keywords" content="Вязание, рукоделие">
   <meta name="description" content="Интернет-магазин милых вещей для дома ручной работы">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
   <header class="main-header">
     <div class="logo main-header__logo">
       <a class="logo__link" href="index.html">
-        <img class="logo__image" width="86" height="35" src="http://placehold.it/86x35" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+        <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
       </a>
     </div>
     <nav class="main-nav">
@@ -39,47 +40,47 @@
     <section class="order">
       <h1 class="order__title">Вязание на заказ</h1>
       <p class="order__content">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form order__knitting-form" action="https://echo.htmlacademy.ru" method="get">
+      <form class="form order__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__group">
           <legend class="form__legend">Тип</legend>
-          <input class="form__input-radio" id="interior-field" name="type-of-product" type="radio" value="interior" checked>
-          <label class="form__label" for="interior-field">Аксессуар для интерьера</label>
-          <input class="form__input-radio" id="toys-field" name="type-of-product" type="radio" value="toys">
-          <label class="form__label" for="toys-field">Детская игрушка</label>
+          <input class="form__input-radio visually-hidden" id="interior-field" name="type-of-product" type="radio" value="interior" checked>
+          <label class="form__label form__label--type" for="interior-field">Аксессуар для интерьера</label>
+          <input class="form__input-radio visually-hidden" id="toys-field" name="type-of-product" type="radio" value="toys">
+          <label class="form__label form__label--type" for="toys-field">Детская игрушка</label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__legend">Цвет</legend>
-          <input class="form__input-checkbox" id="white-field" name="white" type="checkbox" checked>
-          <label class="form__label" for="white-field">Белый</label>
-          <input class="form__input-checkbox" id="gray-field" name="gray" type="checkbox" checked>
-          <label class="form__label" for="gray-field">Серый</label>
-          <input class="form__input-checkbox" id="tiffany-field" name="tiffany" type="checkbox">
-          <label class="form__label" for="tiffany-field">&laquo;Тиффани&raquo;</label>
-          <input class="form__input-checkbox" id="black-field" name="black" type="checkbox">
-          <label class="form__label" for="black-field">Черный</label>
-          <input class="form__input-checkbox" id="pink-field" name="pink" type="checkbox">
-          <label class="form__label" for="pink-field">Розовый</label>
-          <input class="form__input-checkbox" id="orange-field" name="orange" type="checkbox">
-          <label class="form__label" for="orange-field">Оранжевый</label>
+          <input class="form__input-checkbox visually-hidden" id="white-field" name="white" type="checkbox" checked>
+          <label class="form__label form__label--color" for="white-field">Белый</label>
+          <input class="form__input-checkbox visually-hidden" id="gray-field" name="gray" type="checkbox" checked>
+          <label class="form__label form__label--color" for="gray-field">Серый</label>
+          <input class="form__input-checkbox visually-hidden" id="tiffany-field" name="tiffany" type="checkbox">
+          <label class="form__label form__label--color" for="tiffany-field">&laquo;Тиффани&raquo;</label>
+          <input class="form__input-checkbox visually-hidden" id="black-field" name="black" type="checkbox">
+          <label class="form__label form__label--color" for="black-field">Черный</label>
+          <input class="form__input-checkbox visually-hidden" id="pink-field" name="pink" type="checkbox">
+          <label class="form__label form__label--color" for="pink-field">Розовый</label>
+          <input class="form__input-checkbox visually-hidden" id="orange-field" name="orange" type="checkbox">
+          <label class="form__label form__label--color" for="orange-field">Оранжевый</label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__legend">ФИО</legend>
-          <label class="form__label" for="first-name-field">Имя:</label>
+          <label class="form__label form__label--fullname" for="first-name-field">Имя:</label>
           <input class="form__input-text" name="first-name" id="first-name-field" type="text" placeholder="Введите ваше имя*" required>
-          <label class="form__label" for="last-name-field">Фамилия:</label>
+          <label class="form__label form__label--fullname" for="last-name-field">Фамилия:</label>
           <input class="form__input-text" name="last-name" id="last-name-field" type="text" placeholder="Укажите фамилию*" required>
-          <label class="form__label" for="patronymic-field">Отчество:</label>
+          <label class="form__label form__label--fullname" for="patronymic-field">Отчество:</label>
           <input class="form__input-text" name="patronymic" id="patronymic-field" type="text" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__legend">Тел</legend>
-          <label class="form__label">
+          <label class="form__label form__label--tel">
             <input class="form__input-tel"  type="tel" placeholder="+7 XXX XX XX*" pattern="\+7([ \-])?d{3}([ \-])?d{2}([ \-])?d{2}" required> <!--Исправить паттерн-->
           </label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__legend">E-mail</legend>
-          <label class="form__label">
+          <label class="form__label form__label--email">
             <input class="form__input-email"  type="email" placeholder="Ваш Email*" required>
           </label>
         </fieldset>
@@ -108,8 +109,10 @@
     <div class="copyright main-footer__copyright">
       <b class="copyright__content">Разработано</b>
       <div class="academy copyright__academy">
-        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="academy__image" width="27" height="34" src="http://placehold.it/27x34" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 2">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="academy__image" width="27" height="34" viewBox="0 0 60 60">
+            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
         </a>
       </div>
     </div>

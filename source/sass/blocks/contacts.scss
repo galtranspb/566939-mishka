@@ -1,0 +1,48 @@
+.contacts {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444;
+  background-color: #fff;
+}
+
+.contacts__title {
+  margin: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000;
+}
+
+.contacts__info {
+  border-spacing: 0 40px;
+}
+
+.contacts__email {
+  width: 70px;
+}
+
+.contacts__email-content {
+  border-bottom: 1px solid #63d1bb;
+}
+
+.contacts__address {
+  vertical-align: top;
+}
+
+.contacts__address-content {}
+
+.contacts__map {}
+
+.contacts__link {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.contacts__image {}

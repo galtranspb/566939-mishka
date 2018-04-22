@@ -4,44 +4,40 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 20px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include opensansbold;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  color: #444;
-  background-color: #fff;
-  border: 2px solid #444;
+  color: $text-primary;
+  background-color: $bg-white;
+  border: 2px solid $text-primary;
   outline: none;
   cursor: pointer;
 
   &:hover {
     color: rgba(255, 255, 255, 1);
-    background-color: #444;
+    background-color: $text-primary;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #444;
+    background-color: $text-primary;
   }
 
   &--modal {
-    color: #fff;
-    background-color: #63d1bb;
-    border-color: #63d1bb;
+    color: $bg-white;
+    background-color: $bg-aqua;
+    border-color: $bg-aqua;
 
     &:hover {
       color: rgba(99, 209, 187, 1);
-      background-color: #fff;
+      background-color: $bg-white;
     }
 
     &:active {
       color: rgba(99, 209, 187, 0.3);
-      background-color: #fff;
+      background-color: $bg-white;
     }
   }
 }

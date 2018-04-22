@@ -3,13 +3,9 @@
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 20px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
-  background-color: #fff;
+  @include opensansbold;
+  color: $text-title;
+  background-color: $bg-white;
 }
 
 .featured__title {
@@ -20,9 +16,7 @@
 }
 
 .featured__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include listreset;
 }
 
 .featured__item {

@@ -10,21 +10,15 @@
   padding-right: 30px;
   padding-bottom: 75px;
   padding-left: 30px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 27px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
-  background-color: #f1f1f1;
+  @include opensansbold(27px, 30px);
+  color: $text-title;
+  background-color: $bg-gray;
 }
 
 .catalog__list {
-  margin: 0;
-  padding: 0;
+  @include listreset;
   padding-right: 30px;
   padding-left: 30px;
-  list-style: none;
 }
 
 .catalog__item {
@@ -42,30 +36,21 @@
 
 .catalog__container {
   padding: 25px;
-
 }
 
 .catalog__item-title {
   margin: 0;
   margin-bottom: 15px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  @include opensansbold(17px, 24px);
+  color: $text-title;
 }
 
 .catalog__content {
   position: relative;
   margin: 0;
   margin-bottom: 29px;
-  font-weight: 400;
-  font-style: normal;
   font-size: 13px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
 
   &::after {
     content: "";
@@ -84,12 +69,6 @@
 }
 
 .catalog__price {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  @include opensansbold(15px, 24px);
+  color: $text-title;
 }
-
-.catalog__link-cart {}

@@ -1,0 +1,13 @@
+@mixin opensansbold($size: 17px, $lineheight: 20px) {
+  font-weight: 700;
+  font-style: normal;
+  font-size: $size;
+  line-height: $lineheight;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@mixin listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

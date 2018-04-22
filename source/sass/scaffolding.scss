@@ -22,6 +22,11 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
-  background-color: #fff;
+  color: $text-primary;
+  background-color: $bg-white;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

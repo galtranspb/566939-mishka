@@ -2,7 +2,6 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 70px;
-  background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -11,22 +10,16 @@
 .product-type__content {
   margin: 0;
   margin-bottom: 120px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 27px;
-  line-height: 30px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: #000;
+  @include opensansbold(27px, 30px);
+  color: $text-title;
 }
 
 .product-type__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include listreset;
 }
 
 .product-type__item {
-  background-color: #63d1bb;
+  background-color: $bg-aqua;
 
   &:last-child {
     background-color: #56c3b2;
@@ -38,13 +31,9 @@
   width: 120px;
   padding-top: 27px;
   padding-bottom: 27px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include opensansbold(19px, 24px);
   text-decoration: none;
-  color: #fff;
+  color: $bg-white;
 
   &:hover {
     padding-bottom: 32px;

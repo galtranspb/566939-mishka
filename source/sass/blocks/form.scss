@@ -1,13 +1,13 @@
 .form {
   padding-right: 30px;
   padding-left: 30px;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
-  background-color: #fff;
+  // font-weight: 400;
+  // font-style: normal;
+  // font-size: 13px;
+  // line-height: 24px;
+  // font-family: "Open Sans", "Arial", sans-serif;
+  // color: #444;
+  // background-color: #fff;
 }
 
 .form__group {
@@ -21,40 +21,30 @@
 }
 
 .form__legend {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include opensansbold(17px, 16px);
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $bg-aqua;
 }
-
-.form__input-radio {}
 
 .form__label {
   padding-left: 65px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  @include opensansbold(17px, 18px);
+  color: $text-primary;
 
   &--type {
     margin-bottom: 20px;
+  }
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+  &--type:last-of-type {
+    margin-bottom: 0;
   }
 
   &--color {
     margin-bottom: 45px;
+  }
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+  &--color:last-of-type {
+    margin-bottom: 0;
   }
 
   &--fullname {
@@ -71,29 +61,24 @@
   }
 }
 
-.form__input-checkbox {}
-
 .form__input-text {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  font-weight: 400;
-  font-style: normal;
   font-size: 19px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.3);
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $text-title;
   outline: none;
 
   &:hover {
-    border-color: #63d1bb;
+    border-color: $bg-aqua;
   }
 
   &:focus {
-    color: #444;
-    border-color: #63d1bb;
+    color: $text-primary;
+    border-color: $bg-aqua;
   }
 }
 
@@ -101,23 +86,20 @@
   box-sizing: border-box;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  font-weight: 400;
-  font-style: normal;
   font-size: 19px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.3);
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $text-title;
   outline: none;
 
   &:hover {
-    border-color: #63d1bb;
+    border-color: $bg-aqua;
   }
 
   &:focus {
-    color: #444;
-    border-color: #63d1bb;
+    color: $text-primary;
+    border-color: $bg-aqua;
   }
 }
 
@@ -125,52 +107,43 @@
   box-sizing: border-box;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  font-weight: 400;
-  font-style: normal;
   font-size: 19px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.3);
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $text-title;
   outline: none;
 
   &:hover {
-    border-color: #63d1bb;
+    border-color: $bg-aqua;
   }
 
   &:focus {
-    color: #444;
-    border-color: #63d1bb;
+    color: $text-primary;
+    border-color: $bg-aqua;
   }
 }
 
 .form__input-textarea {
-  font-weight: 400;
-  font-style: normal;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.3);
-  border: 1px solid #444;
+  border: 1px solid $text-primary;
   outline: none;
 
   &:hover {
-    border: 1px solid #63d1bb;
+    border: 1px solid $bg-aqua;
   }
 
   &:focus {
-    color: #444;
-    border: 1px solid #63d1bb;
+    color: $text-primary;
+    border: 1px solid $bg-aqua;
   }
 }
 
 .form__content {
   margin-bottom: 30px;
-  font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
+  color: $text-primary;
 }

@@ -3,13 +3,24 @@
 }
 
 .main-menu__item {
-  border-bottom: 1px solid $bc-gray;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  box-shadow: inset 0 1px 0 $bc-gray;
+
+  &--cart {
+    box-shadow:
+    inset 0 1px 0 $bc-gray,
+    inset 0 -1px 0 $bc-gray;
+  }
+
+  &--add-link,
+  &--delivery {
+    display: none;
+  }
 }
 
 .main-menu__link {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
   @include opensansbold(17px, 24px);
   text-decoration: none;
   color: $text-title;
@@ -22,4 +33,126 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &--add-link {
+    font-size: 15px;
+  }
+
+  &--delivery {
+    font-weight: 400;
+    font-size: 15px;
+    color: $text-primary;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .main-menu__item {
+    padding-left: 0;
+    box-shadow: none;
+
+    &--catalog {
+      width: 167px;
+      order: 5;
+    }
+
+    &--order {
+      width: 167px;
+      order: 4;
+    }
+
+    &--search {
+      order: 2;
+      width: 85px;
+      box-shadow:
+      inset  1px 0 0 $bc-gray,
+      inset -1px 0 0 $bc-gray;
+    }
+
+    &--cart {
+      order: 1;
+      width: 205px;
+      padding-left: 60px;
+      text-align: right;
+    }
+
+    &--delivery {
+      order: 3;
+      display: block;
+      margin-left: 100px;
+    }
+  }
+
+  .main-menu__link {
+
+    &--catalog,
+    &--order {
+      font-size: 15px;
+    }
+
+    &--search {
+      font-size: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu {
+    flex-direction: row;
+  }
+
+  .main-menu__item {
+   &--catalog {
+    order: 0;
+    width: 185px;
+   }
+
+   &--order {
+    order: 0;
+    width: 185px;
+    margin-right: 332px;
+    padding-left: 34px;
+   }
+
+   &--search {
+    order: 0;
+    margin-left: auto;
+   }
+
+   &--cart {
+    order: 0;
+    margin-right: 0;
+   }
+
+   &--add-link {
+    display: block;
+    width: 185px;
+   }
+
+   &:nth-child(6) {
+    padding-left: 34px;
+   }
+
+   &--delivery {
+    order: 0;
+    margin-left: auto;
+   }
+  }
+
+  .main-menu__link {
+    &--catalog,
+    &--order {
+      font-size: 17px;
+    }
+  }
+
+
+
+
+}
+

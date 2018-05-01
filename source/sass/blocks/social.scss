@@ -1,5 +1,10 @@
 .social {
   @include listreset;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  outline: 1px solid blue;
 }
 
 .social__item {

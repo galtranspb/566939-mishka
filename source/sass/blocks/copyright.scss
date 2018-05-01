@@ -1,7 +1,14 @@
 .copyright {
+  display: flex;
+  align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
   @include opensansbold(19px, 18px);
   color: $text-title;
-  background-color: $bg-gray;
+
+  outline: 1px solid blue;
+}
+
+.copyright__content {
+  margin-right: 30px;
 }

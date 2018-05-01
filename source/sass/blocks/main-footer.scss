@@ -1,5 +1,45 @@
 .main-footer {
-  width: 320px;
-  margin: 0 auto;
   background-color: $bg-gray;
+}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.main-footer__logo {
+ display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .main-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    outline: 1px solid red;
+  }
+
+  .main-footer__logo {
+    display: block;
+    margin-right: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    width: 1050px;
+  }
 }

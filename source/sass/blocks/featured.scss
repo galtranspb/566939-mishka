@@ -1,11 +1,14 @@
 .featured {
+  @include opensansbold;
+  color: $text-title;
+  background-color: $bg-white;
+}
+
+.featured__container {
   width: 260px;
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
-  @include opensansbold;
-  color: $text-title;
-  background-color: $bg-white;
 }
 
 .featured__title {
@@ -22,4 +25,44 @@
 .featured__item {
   margin-bottom: 30px;
   padding-top: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .featured__container {
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .featured__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .featured__item {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured__container {
+    width: 1050px;
+  }
+
+  .featured__title {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .featured__list {
+    width: 700px;
+    margin: 0 auto;
+  }
 }

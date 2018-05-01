@@ -124,7 +124,8 @@
   }
   .contacts__container {
     width: 350px;
-    margin-left: 175px;
+    margin-left: 275px;
+    padding: 0;
   }
 
   .contacts__title {
@@ -143,11 +144,11 @@
 
   .contacts__map {
     position: absolute;
-    bottom: 105px;
+    bottom: 50px;
     right: 105px;
     width: 525px;
   }
   .contacts__button {
-    margin-left: 175px;
+    margin-left: 275px;
   }
 }

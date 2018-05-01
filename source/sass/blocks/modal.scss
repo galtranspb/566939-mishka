@@ -1,15 +1,19 @@
 .modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 260px;
   margin: 0 auto;
   padding-top: 35px;
   padding-right: 30px;
   padding-bottom: 40px;
   padding-left: 30px;
-  border-top: 2px solid #ececec;
+  border-top: 2px solid $bc-gray;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .modal__title {
+  width: 145px;
   margin: 0;
   margin-bottom: 20px;
   @include opensansbold(25px, 30px);
@@ -23,6 +27,24 @@
   color: $text-primary;
 }
 
+.modal__form {
+  outline: 1px solid blue;
+}
+
+.modal__label {
+  display: inline-block;
+  width: 80px;
+  margin-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  @include opensansbold(17px, 16px);
+  vertical-align: middle;
+  text-align: center;
+  color: $text-primary;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+}
+
 .modal__input {
   &:hover + .modal__label {
     border-color: rgba(68, 68, 68, 0.3);
@@ -33,15 +55,32 @@
   }
 }
 
-.modal__label {
-  display: inline-block;
-  width: 80px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  @include opensansbold(17px, 16px);
-  vertical-align: middle;
-  text-align: center;
-  color: $text-primary;
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  cursor: pointer;
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    padding-top: 45px;
+    padding-right: 110px;
+    padding-bottom: 50px;
+    padding-left: 110px;
+  }
+
+  .modal__title {
+    width: auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__content {
+    margin-bottom: 25px;
+    font-size: 17px;
+  }
+
+  .modal__form {
+    width: 350px;
+  }
+
+  .modal__label {
+    width: 110px;
+  }
 }

@@ -11,6 +11,8 @@
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
+
+  outline: 1px solid red;
 }
 
 .promotion__title {
@@ -20,6 +22,8 @@
   margin-bottom: 5px;
   @include opensansbold(25px, 30px);
   color: $text-title;
+
+  outline: 1px solid blue;
 }
 
 .promotion__event {
@@ -32,12 +36,16 @@
 .promotion__content {
   margin: 0;
   margin-bottom: 25px;
+
+  outline: 1px solid blue;
 }
 
 .promotion__characteristics-of-goods {
   margin-bottom: 360px;
   border-collapse: collapse;
   line-height: 20px;
+
+  outline: 1px solid blue;
 }
 
 .promotion__characteristic {
@@ -58,6 +66,8 @@
   margin-bottom: 30px;
   @include opensansbold;
   text-align: center;
+
+  outline: 1px solid blue;
 }
 
 .promotion__image {
@@ -65,6 +75,8 @@
   width: 260px;
   height: 315px;
   top: 335px;
+
+  outline: 1px solid blue;
 }
 
 @media (min-width: $tablet-width) {

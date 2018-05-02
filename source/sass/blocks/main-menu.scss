@@ -8,6 +8,8 @@
   padding-left: 45px;
   box-shadow: inset 0 1px 0 $bc-gray;
 
+  outline: 1px solid blue;
+
   &--cart {
     box-shadow:
     inset 0 1px 0 $bc-gray,
@@ -25,6 +27,8 @@
   text-decoration: none;
   color: $text-title;
   cursor: pointer;
+
+  outline: 1px solid green;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);

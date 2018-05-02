@@ -9,6 +9,8 @@
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
+
+  outline: 1px solid red;
 }
 
 .featured__title {
@@ -16,15 +18,21 @@
   margin-bottom: 25px;
   font-size: 25px;
   line-height: 30px;
+
+  outline: 1px solid blue;
 }
 
 .featured__list {
   @include listreset;
+
+  outline: 1px solid green;
 }
 
 .featured__item {
   margin-bottom: 30px;
   padding-top: 60px;
+
+  outline: 1px solid blue;
 }
 
 @media (min-width: $tablet-width) {

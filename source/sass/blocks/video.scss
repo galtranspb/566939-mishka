@@ -1,7 +1,3 @@
-.video {
-  position: relative;
-}
-
 .video__content {
   width: 260px;
   height: 150px;
@@ -20,4 +16,18 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    position: relative;
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 682px;
+  }
 }

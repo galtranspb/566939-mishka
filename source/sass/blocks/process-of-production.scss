@@ -1,17 +1,30 @@
 .process-of-production {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: $bg-white;
+}
+
+.process-of-production__container {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  background-color: $bg-white;
-  border: 1px solid #ececec;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  outline: 1px solid red;
+}
+
+.process-of-production__wrapper {
+  padding: 30px;
+  outline: 1px solid $bc-gray;
+
+  outline: 1px solid blue;
+
 }
 
 .process-of-production__title {
   margin: 0;
-  margin-bottom: 30px;
-  margin-left: 90px;
+  margin-bottom: 200px;
+  margin-left: 60px;
   @include opensansbold(17px, 24px);
   color: $text-title;
 }
@@ -19,7 +32,69 @@
 .process-of-production__description {
   margin: 0;
   margin-bottom: 32px;
-  padding-right: 40px;
-  padding-left: 30px;
+  padding-right: 10px;
   font-size: 13px;
+}
+
+.process-of-production__video {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .process-of-production__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .process-of-production__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .process-of-production__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .process-of-production__video {
+    position: static;
+    top: auto;
+    left: auto;
+    order: -1;
+    transform: none;
+
+    outline: 1px solid blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process-of-production__container {
+    width: 1050px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .process-of-production__wrapper {
+    width: 238px;
+    padding-left: 75px;
+    padding-right: 55px;
+  }
+
+  .process-of-production__title {
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+
+  .process-of-production__description {
+    margin-bottom: 45px;
+  }
 }

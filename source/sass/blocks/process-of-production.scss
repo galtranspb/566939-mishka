@@ -15,16 +15,16 @@
 
 .process-of-production__wrapper {
   padding: 30px;
-  outline: 1px solid $bc-gray;
+  // outline: 1px solid $bc-gray;
 
   outline: 1px solid blue;
-
 }
 
 .process-of-production__title {
   margin: 0;
   margin-bottom: 200px;
   margin-left: 60px;
+
   @include opensansbold(17px, 24px);
   color: $text-title;
 }

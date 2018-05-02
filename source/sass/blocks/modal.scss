@@ -16,6 +16,7 @@
   width: 145px;
   margin: 0;
   margin-bottom: 20px;
+
   @include opensansbold(25px, 30px);
   color: $text-title;
 }
@@ -37,6 +38,7 @@
   margin-bottom: 30px;
   padding-top: 17px;
   padding-bottom: 17px;
+
   @include opensansbold(17px, 16px);
   vertical-align: middle;
   text-align: center;

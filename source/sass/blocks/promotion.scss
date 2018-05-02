@@ -20,6 +20,7 @@
   z-index: 1;
   margin: 0;
   margin-bottom: 5px;
+
   @include opensansbold(25px, 30px);
   color: $text-title;
 
@@ -29,6 +30,7 @@
 .promotion__event {
   margin: 0;
   margin-bottom: 25px;
+
   @include opensansbold;
   color: $bg-aqua;
 }
@@ -64,6 +66,7 @@
 .promotion__price {
   margin: 0;
   margin-bottom: 30px;
+
   @include opensansbold;
   text-align: center;
 
@@ -166,5 +169,4 @@
     width: 525px;
     height: 636px;
   }
-
 }

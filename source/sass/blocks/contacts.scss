@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.contacts__container  {
+.contacts__container {
   width: 320px;
   margin: 0 auto;
 }
@@ -12,6 +12,7 @@
   margin: 0;
   margin-right: 30px;
   margin-left: 30px;
+
   @include opensansbold(18px, 30px);
   color: $text-title;
 }
@@ -68,6 +69,7 @@
     padding-top: 70px;
     padding-bottom: 60px;
   }
+
   .contacts__container {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +124,7 @@
     padding-top: 150px;
     padding-bottom: 105px;
   }
+
   .contacts__container {
     width: 350px;
     margin-left: 275px;
@@ -148,6 +151,7 @@
     right: 105px;
     width: 525px;
   }
+
   .contacts__button {
     margin-left: 275px;
   }

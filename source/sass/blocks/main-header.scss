@@ -22,7 +22,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    background-image: linear-gradient( to bottom, $bg-white 88px, $bc-gray 88px, $bc-gray 89px, #f9f9f9 89px);
+    background-image: linear-gradient(to bottom, $bg-white 88px, $bc-gray 88px, $bc-gray 89px, #f9f9f9 89px);
   }
 
   .main-header__container {
@@ -37,7 +37,7 @@
   .main-header__logo {
     position: absolute;
     left: 50px;
-    top: 0px;
+    top: 0;
   }
 }
 

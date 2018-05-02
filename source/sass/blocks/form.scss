@@ -26,6 +26,7 @@
 
 .form__label {
   padding-left: 65px;
+
   @include opensansbold(17px, 18px);
   color: $text-title;
 
@@ -165,7 +166,7 @@
   }
 }
 
-@meida (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .form {
     width: 1050px;
   }
@@ -173,8 +174,5 @@
   .form-group {
     width: 700px;
     margin-right: 175px;
-    // &:not(.form__group--color) {
-      //   width: 700px;
-      // }
-    }
   }
+}

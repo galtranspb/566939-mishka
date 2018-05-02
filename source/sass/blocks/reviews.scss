@@ -12,6 +12,7 @@
 
 .reviews__title {
   margin-bottom: 30px;
+
   @include opensansbold(25px, 30px);
   color: $text-title;
 }

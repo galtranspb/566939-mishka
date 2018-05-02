@@ -12,7 +12,7 @@
   @include opensansbold(27px, 30px);
   color: $text-title;
 
-  outline: 1px solid red;
+  outline: 1px solid blue;
 }
 
 .order__content {
@@ -23,7 +23,7 @@
   padding-left: 30px;
   font-size: 13px;
 
-  outline: 1px solid red;
+  outline: 1px solid blue;
 }
 
 @media (min-width: $tablet-width) {

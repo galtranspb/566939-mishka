@@ -6,43 +6,44 @@
   <title>Вязание на заказ</title>
   <meta name="keywords" content="Вязание, рукоделие">
   <meta name="description" content="Интернет-магазин милых вещей для дома ручной работы">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="main-header">
-    <div class="main-header__container">
-      <a class="logo main-header__logo" href="index.html">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <a class="logo main-nav__logo" href="index.html">
         <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-menu main-nav__main-menu">
-          <li class="main-menu__item main-menu__item--catalog">
-            <a class="main-menu__link main-menu__link--catalog" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-menu__item main-menu__item--order">
-            <a class="main-menu__link main-menu__link--order" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-menu__item main-menu__item--search">
-            <a class="main-menu__link main-menu__link--search" href="searh-form.html">Поиск по сайту</a>
-          </li>
-          <li class="main-menu__item main-menu__item--cart">
-            <a class="main-menu__link main-menu__link--cart" href="cart-user1.html">Корзина: пока пуста</a>
-          </li>
-          <li class="main-menu__item main-menu__item--add-link">
-            <a class="main-menu__link main-menu__link--add-link" href="new-arrival.html">Новые поступлния</a>
-          </li>
-          <li class="main-menu__item main-menu__item--add-link">
-            <a class="main-menu__link main-menu__link--add-link" href="closeout.html">Распродажа</a>
-          </li>
-          <li class="main-menu__item main-menu__item--delivery">
-            <a class="main-menu__link main-menu__link--delivery" href="free-delivery.html">Бесплатная доставка по России</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="main-menu main-nav__main-menu">
+        <li class="main-menu__item main-menu__item--catalog">
+          <a class="main-menu__link main-menu__link--catalog" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-menu__item main-menu__item--order">
+          <a class="main-menu__link main-menu__link--order" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="user-menu main-nav__user-menu">
+        <li class="user-menu__item user-menu__item--search">
+          <a class="user-menu__link user-menu__link--search" href="searh-form.html">Поиск по сайту</a>
+        </li>
+        <li class="user-menu__item user-menu__item--cart">
+          <a class="user-menu__link user-menu__link--cart" href="cart-user1.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="add-menu main-nav__add-menu">
+        <li class="add-menu__item add-menu__item--new-arrival">
+          <a class="add-menu__link add-menu__link--new-arrival" href="new-arrival.html">Новые поступлния</a>
+        </li>
+        <li class="add-menu__item add-menu__item--closeout">
+          <a class="add-menu__link add-menu__link--closeout" href="closeout.html">Распродажа</a>
+        </li>
+      </ul>
+      <p class="main-nav__delivery">Бесплатная доставка по России</p>
+    </nav>
   </header>
 
   <main>

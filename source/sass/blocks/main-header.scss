@@ -1,54 +1,5 @@
-.main-header {
-  background-color: $bg-white;
-}
-
-.main-header__container {
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 260px;
-  padding-right: 30px;
-  padding-left: 30px;
-
-  outline: 1px solid red;
-}
-
-.main-header__logo {
-  align-self: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-
 @media (min-width: $tablet-width) {
   .main-header {
     background-image: linear-gradient(to bottom, $bg-white 88px, $bc-gray 88px, $bc-gray 89px, #f9f9f9 89px);
-  }
-
-  .main-header__container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 668px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .main-header__logo {
-    position: absolute;
-    left: 50px;
-    top: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header__container {
-    justify-content: flex-start;
-    width: 1150px;
-  }
-
-  .main-header__logo {
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

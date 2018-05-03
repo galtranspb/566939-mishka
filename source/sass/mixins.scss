@@ -1,3 +1,11 @@
+@mixin opensans($size: 15px, $lineheight: 24px) {
+  font-weight: 400;
+  font-style: normal;
+  font-size: $size;
+  line-height: $lineheight;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
 @mixin opensansbold($size: 17px, $lineheight: 20px) {
   font-weight: 700;
   font-style: normal;
@@ -10,4 +18,30 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin container($width: 260px, $padding: 30px) {
+  width: $width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $padding;
+  padding-left: $padding;
+}
+
+@mixin main-nav-link-decoration ($size: 17px, $lineheight: 24px) {
+  font-weight: 700;
+  font-style: normal;
+  font-size: $size;
+  line-height: $lineheight;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: none;
+  color: $text-title;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

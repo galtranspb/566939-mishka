@@ -1,0 +1,48 @@
+.user-menu {
+  @include listreset;
+}
+
+.user-menu__item {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  box-shadow: inset 0 1px 0 $bc-gray;
+
+  &--cart {
+    box-shadow:
+      inset 0 1px 0 $bc-gray,
+      inset 0 -1px 0 $bc-gray;
+  }
+}
+
+.user-menu__link {
+  @include main-nav-link-decoration;
+}
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    display: flex;
+  }
+
+  .user-menu__item {
+    padding-left: 0;
+    box-shadow: none;
+
+    &--search {
+      width: 85px;
+      box-shadow:
+        inset  1px 0 0 $bc-gray,
+        inset -1px 0 0 $bc-gray;
+    }
+
+    &--cart {
+      width: 205px;
+      padding-left: 60px;
+      text-align: right;
+    }
+  }
+
+  .user-menu__link--search {
+    font-size: 0;
+  }
+}

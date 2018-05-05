@@ -17,7 +17,7 @@
   margin-bottom: 50px;
   color: $text-title;
 
-  &:after {
+  &::after {
     content: "Товар недели";
     position: absolute;
     top: 35px;
@@ -87,7 +87,7 @@
     font-size: 43px;
     line-height: 50px;
 
-    &:after {
+    &::after {
       top: 15px;
       right: 50px;
       margin-left: auto;
@@ -113,6 +113,7 @@
     width: 333px;
     height: 404px;
     margin-top: -335px;
+    margin-bottom: 0;
   }
 
   .promotion__characteristics-of-goods {
@@ -145,7 +146,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    &:after {
+    &::after {
       right: auto;
       left: 50px;
     }
@@ -171,8 +172,7 @@
   .promotion__image {
     width: 525px;
     height: 636px;
-    margin: 0;
-    margin: -580px;
+    margin-top: -580px;
     margin-left: -1px;
   }
 }

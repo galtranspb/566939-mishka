@@ -5,6 +5,8 @@
 
 .reviews__container {
   @include container;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__title {
@@ -39,7 +41,7 @@
   .reviews__container {
     @include container(668px, 50px);
     position: relative;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
   }

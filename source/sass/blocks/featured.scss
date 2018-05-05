@@ -1,16 +1,13 @@
 .featured {
   @include opensansbold;
+  padding-top: 35px;
+  padding-bottom: 30px;
   color: $text-title;
   background-color: $bg-white;
 }
 
 .featured__container {
-  width: 260px;
-  margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
-
-  outline: 1px solid red;
+  @include container;
 }
 
 .featured__title {
@@ -18,28 +15,25 @@
   margin-bottom: 25px;
   font-size: 25px;
   line-height: 30px;
-
-  outline: 1px solid blue;
 }
 
 .featured__list {
   @include listreset;
-
-  outline: 1px solid green;
 }
 
 .featured__item {
   margin-bottom: 30px;
   padding-top: 60px;
-
-  outline: 1px solid blue;
 }
 
 @media (min-width: $tablet-width) {
+  .featured {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
   .featured__container {
-    width: 668px;
-    padding-right: 50px;
-    padding-left: 50px;
+    @include container(668px, 50px);
   }
 
   .featured__title {
@@ -56,6 +50,26 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
+
+    &--scandinavian {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 }
 
@@ -65,12 +79,11 @@
   }
 
   .featured__title {
-    width: 700px;
-    margin: 0 auto;
+    margin-left: 175px;
   }
 
   .featured__list {
     width: 700px;
-    margin: 0 auto;
+    margin-left: 175px;
   }
 }

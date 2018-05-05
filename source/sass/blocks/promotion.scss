@@ -74,12 +74,10 @@
 
 @media (min-width: $tablet-width) {
   .promotion__container {
+    @include container(668px, 50px);
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 668px;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   .promotion__title {

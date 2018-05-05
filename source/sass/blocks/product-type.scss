@@ -9,22 +9,16 @@
 }
 
 .product-type__content {
+  @include opensansbold(27px, 30x);
   width: 260px;
   margin-bottom: 120px;
-
-  @include opensansbold(27px, 30x);
   text-align: center;
   color: $text-title;
-
-  outline: 1px solid blue;
 }
 
 .product-type__list {
-  width: 320px;
-
   @include listreset;
-
-  outline: 1px solid red;
+  width: 320px;
 }
 
 .product-type__item {
@@ -36,18 +30,17 @@
 }
 
 .product-type__link {
+  @include opensansbold(19px, 24px);
   display: block;
   width: 130px;
   padding-top: 27px;
   padding-right: 145px;
   padding-bottom: 27px;
-
-  @include opensansbold(19px, 24px);
   text-decoration: none;
   color: $bg-white;
 
   &:hover {
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
   }
 
   &:active {
@@ -67,11 +60,8 @@
   }
 
   .product-type__list {
+    @include container(668px, 50px);
     display: flex;
-    width: 668px;
-    margin: 0 auto;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   .product-type__item {

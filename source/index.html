@@ -6,33 +6,43 @@
   <title>HTML Academy: Мишка</title>
   <meta name="keywords" content="Вязание, рукоделие">
   <meta name="description" content="Интернет-магазин милых вещей для дома ручной работы">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="main-header">
-    <div class="logo main-header__logo">
-      <a class="logo__link">
-        <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
-      </a>
-    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <a class="logo main-nav__logo">
+        <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+      </a>
       <ul class="main-menu main-nav__main-menu">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
+        <li class="main-menu__item main-menu__item--catalog">
+          <a class="main-menu__link main-menu__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link main-menu__link--search" href="#">Поиск по сайту</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link main-menu__link--cart" href="#">Корзина: пока пуста</a>
+        <li class="main-menu__item main-menu__item--order">
+          <a class="main-menu__link main-menu__link--order" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
+      <ul class="user-menu main-nav__user-menu">
+        <li class="user-menu__item user-menu__item--search">
+          <a class="user-menu__link user-menu__link--search" href="searh-form.html">Поиск по сайту</a>
+        </li>
+        <li class="user-menu__item user-menu__item--cart">
+          <a class="user-menu__link user-menu__link--cart" href="cart-user1.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="add-menu main-nav__add-menu">
+        <li class="add-menu__item add-menu__item--new-arrival">
+          <a class="add-menu__link add-menu__link--new-arrival" href="new-arrival.html">Новые поступлния</a>
+        </li>
+        <li class="add-menu__item add-menu__item--closeout">
+          <a class="add-menu__link add-menu__link--closeout" href="closeout.html">Распродажа</a>
+        </li>
+      </ul>
+      <p class="main-nav__delivery">Бесплатная доставка по России</p>
     </nav>
   </header>
 
@@ -51,43 +61,46 @@
       </ul>
     </section>
     <section class="promotion">
-      <h2 class="promotion__title">Вязаные корзинки</h2>
-      <p class="promotion__event">Товар недели</p>
-      <p class="promotion__content">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="promotion__characteristics-of-goods">
-        <tbody>
-          <tr>
-            <td class="promotion__characteristic">Цвет:</td>
-            <td class="promotion__value">&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr>
-            <td class="promotion__characteristic">Диаметр:</td>
-            <td class="promotion__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="promotion__characteristic">Высота:</td>
-            <td class="promotion__value">15 см</td>
-          </tr>
-        </tbody>
-      </table>
-      <img class="promotion__image" width="260" height="315" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка серого цвета, диаметром 25 сантиметров и высотой 15 сантиметов">
-      <p class="promotion__price">Цена:990 руб.</p>
-      <a class="button promotion__button" href="modal.html">Заказать</a>
+      <div class="promotion__container">
+        <h2 class="promotion__title">Вязаные корзинки</h2>
+        <p class="promotion__content">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="promotion__characteristics-of-goods">
+          <tbody>
+            <tr>
+              <td class="promotion__characteristic">Цвет:</td>
+              <td class="promotion__value">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr>
+              <td class="promotion__characteristic">Диаметр:</td>
+              <td class="promotion__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="promotion__characteristic">Высота:</td>
+              <td class="promotion__value">15 см</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="promotion__price">Цена:990 руб.</p>
+        <a class="button promotion__button" href="modal.html">Заказать</a>
+        <img class="promotion__image" width="260" height="315" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка серого цвета, диаметром 25 сантиметров и высотой 15 сантиметов">
+      </div>
     </section>
     <section class="featured">
-      <h2 class="featured__title">Коротко о нас:</h2>
-      <ul class="featured__list">
-        <li class="featured__item featured__item--flower">Экологически чистые материалы</li>
-        <li class="featured__item featured__item--scandinavian">Скандинавский стиль по российской цене</li>
-        <li class="featured__item featured__item--heart">Увеличивает лайки на фотографиях</li>
-        <li class="featured__item featured__item--ball">Связано вручную с любовью и умилением</li>
-        <li class="featured__item featured__item--rocket">Поддержка отечественного производителя</li>
-        <li class="featured__item featured__item--gift">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="featured__container">
+        <h2 class="featured__title">Коротко о нас:</h2>
+        <ul class="featured__list">
+          <li class="featured__item featured__item--flower">Экологически чистые материалы</li>
+          <li class="featured__item featured__item--scandinavian">Скандинавский стиль по российской цене</li>
+          <li class="featured__item featured__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="featured__item featured__item--ball">Связано вручную с любовью и умилением</li>
+          <li class="featured__item featured__item--rocket">Поддержка отечественного производителя</li>
+          <li class="featured__item featured__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__container slider">
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <p class="reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -99,29 +112,29 @@
           <button class="slider__toggle" type="button">Предыдущий отзыв</button>
           <button class="slider__toggle" type="button">Следующий отзыв</button>
         </p>
+        <a class="button reviews__button" href="#">Написать</a>
       </div>
-      <a class="button reviews__button" href="#">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__info">
-        <tbody>
-          <tr>
-            <td class="contacts__email">e-mail:</td>
-            <td class="contacts__email-content">info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td class="contacts__address">адрес:</td>
-            <td class="contacts__address-content">г. Санкт-Петербург,<br> ул. Большая<br>Конюшенная,<br> д. 19/8, офис 101</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="contacts__map">
+      <div class="contacts__container">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">email:
+            <span class="contacts__email-content">info@mimimishkashop.ru</span>
+          </p>
+          <p class="contacts__address">адрес:
+            <span class="contacts__address-content">г. Санкт-Петербург,</span>
+            <span class="contacts__address-content-new-line">ул. Большая</span>
+            <span class="contacts__address-content-new-line">Конюшенная,</span>
+            <span class="contacts__address-content-new-line">д. 19/8, офис 101</span>
+          </p>
+        </div>
         <a class="contacts__link" href="https://yandex.ru/maps/2/saint-petersburg/?mode=search&ol=geo&ll=30.323527%2C59.938674&z=17&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8%2520" target="_blank">
           <img class="contacts__image" width="322" height="457" src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная, д. 19/8, офис 101">
         </a>
+        <a class="button contacts__button" href="feedback-form.html">Напишите нам</a>
       </div>
-      <a class="button contacts__button" href="feedback-form.html">Напишите нам</a>
+
     </section>
     <section class="modal">
       <h2 class="modal__title">Добваить в корзину</h2>
@@ -139,25 +152,30 @@
   </main>
 
   <footer class="main-footer">
-    <ul class="social main-footer__social">
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">Инстаграм</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/mobile" target="_blank">Фейсбук</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Твиттер</a>
-      </li>
-    </ul>
-    <div class="copyright main-footer__copyright">
-      <b class="copyright__content">Разработано</b>
-      <div class="academy copyright__academy">
-        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <svg class="academy__image" width="27" height="34" viewBox="0 0 60 60">
-             <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-          </svg>
-        </a>
+    <div class="main-footer__container">
+      <a class="logo logo--footer main-footer__logo">
+        <img class="logo__image" width="102" height="34" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+      </a>
+      <ul class="social main-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/mobile" target="_blank">Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Твиттер</a>
+        </li>
+      </ul>
+      <div class="copyright main-footer__copyright">
+        <b class="copyright__content">Разработано</b>
+        <div class="academy copyright__academy">
+          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <svg class="academy__image" width="27" height="34" viewBox="0 0 60 60">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>

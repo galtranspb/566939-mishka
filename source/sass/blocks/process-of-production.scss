@@ -1,34 +1,105 @@
 .process-of-production {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.process-of-production__container {
+  display: flex;
+  flex-direction: column;
   width: 260px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  padding-top: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #fff;
-  border: 1px solid #ececec;
+  outline: 1px solid $bc-gray;
 }
 
 .process-of-production__title {
+  @include opensansbold(17px, 24px);
   margin: 0;
-  margin-bottom: 30px;
-  margin-left: 90px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  color: $text-title;
 }
 
 .process-of-production__description {
-  margin: 0;
+  order: 2;
+  margin-top: 0;
+  margin-right: 45px;
   margin-bottom: 32px;
-  padding-right: 40px;
-  padding-left: 30px;
-  font-weight: 400;
-  font-style: normal;
+  margin-left: 35px;
   font-size: 13px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
+}
+
+.process-of-production__button {
+  order: 3;
+  width: 192px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .process-of-production__container {
+    width: 668px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 0;
+  }
+
+  .process-of-production__title {
+    margin-bottom: 40px;
+    margin-left: 100px;
+    font-size: 20px;
+  }
+
+  .process-of-production__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .process-of-production__button {
+    width: auto;
+  }
+
+  .process-of-production__video {
+    order: -1;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process-of-production {
+    padding-bottom: 200px;
+  }
+
+  .process-of-production__container {
+    align-items: flex-end;
+    width: 1050px;
+  }
+
+  .process-of-production__title {
+    width: 165px;
+    margin-right: 125px;
+    margin-bottom: 40px;
+  }
+
+  .process-of-production__description {
+    width: 230px;
+    margin: 0;
+    margin-right: 60px;
+    margin-bottom: 60px;
+  }
+
+  .process-of-production__button {
+    width: 230px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+  }
+
+  .process-of-production__video {
+    align-self: flex-start;
+    margin-bottom: -380px;
+  }
 }

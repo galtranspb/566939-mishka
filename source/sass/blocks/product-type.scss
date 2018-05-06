@@ -1,32 +1,28 @@
 .product-type {
-  width: 320px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 70px;
-  background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .product-type__content {
-  margin: 0;
+  @include opensansbold(27px, 30x);
+  width: 260px;
   margin-bottom: 120px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 27px;
-  line-height: 30px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: #000;
+  text-align: center;
+  color: $text-title;
 }
 
 .product-type__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include listreset;
+  width: 320px;
 }
 
 .product-type__item {
-  background-color: #63d1bb;
+  background-color: $bg-aqua;
 
   &:last-child {
     background-color: #56c3b2;
@@ -34,23 +30,63 @@
 }
 
 .product-type__link {
+  @include opensansbold(19px, 24px);
   display: block;
-  width: 120px;
+  width: 130px;
   padding-top: 27px;
+  padding-right: 145px;
   padding-bottom: 27px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
-  color: #fff;
+  color: $bg-white;
 
   &:hover {
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-type {
+    width: auto;
+  }
+
+  .product-type__content {
+    width: 510px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-type__list {
+    @include container(668px, 50px);
+    display: flex;
+  }
+
+  .product-type__item {
+    width: 50%;
+  }
+
+  .product-type__link {
+    width: 120px;
+    padding-right: 12px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-type__content {
+    width: 700px;
+  }
+
+  .product-type__list {
+    width: 1050px;
+  }
+
+  .product-type__link {
+    padding-right: 20px;
   }
 }

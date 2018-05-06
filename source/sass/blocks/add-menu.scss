@@ -1,0 +1,20 @@
+.add-menu {
+  @include listreset;
+}
+
+.add-menu__item {
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  &--new-arrival {
+    padding-right: 40px;
+  }
+
+  &--closeout {
+    padding-left: 40px;
+  }
+}
+
+.add-menu__link {
+  @include main-nav-link-decoration(15px, 24px);
+}

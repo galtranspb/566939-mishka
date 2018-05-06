@@ -1,7 +1,8 @@
 .social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include listreset;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .social__item {
@@ -21,18 +22,18 @@
   &--instagram {
     width: 22px;
     height: 22px;
-    background-image: url("../../img/icon-insta.svg");
+    background-image: url("../img/icon-insta.svg");
   }
 
   &--facebook {
     width: 15px;
     height: 28px;
-    background-image: url("../../img/icon-fb.svg");
+    background-image: url("../img/icon-fb.svg");
   }
 
   &--twitter {
     width: 24px;
     height: 21px;
-    background-image: url("../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
 }

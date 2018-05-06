@@ -4,19 +4,14 @@
 }
 
 .academy__link {
-  fill: #63d1bb;
+  fill: $bg-aqua;
 
   &:hover {
-    fill: #46c1ae;
+    fill: $bg-turquoise;
   }
 
   &:active {
-    fill: #46c1ae;
+    fill: $bg-turquoise;
     opacity: 0.3;
   }
-}
-
-.academy__imgage {
-  max-width: 100%;
-  height: auto;
 }

@@ -1,38 +1,42 @@
 .modal {
-  width: 260px;
-  margin: 0 auto;
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 35px;
-  padding-right: 30px;
   padding-bottom: 40px;
-  padding-left: 30px;
-  background-color: #fff;
-  border-top: 2px solid #c6c6c6;
+  border-top: 2px solid $bc-gray;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .modal__title {
+  @include opensansbold(25px, 30px);
+  width: 145px;
   margin: 0;
   margin-bottom: 20px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  color: $text-title;
 }
 
 .modal__content {
   margin: 0;
   margin-bottom: 20px;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
+  color: $text-primary;
 }
 
-.modal__form {}
+.modal__label {
+  @include opensansbold(17px, 16px);
+  display: inline-block;
+  width: 80px;
+  margin-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  vertical-align: middle;
+  text-align: center;
+  color: $text-primary;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+}
 
 .modal__input {
   &:hover + .modal__label {
@@ -40,23 +44,38 @@
   }
 
   &:checked + .modal__label {
-    border-color: #63d1bb;
+    border-color: $bg-aqua;
   }
 }
 
-.modal__label {
-  display: inline-block;
-  width: 80px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  vertical-align: middle;
-  text-align: center;
-  color: #444;
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  cursor: pointer;
+.modal__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    @include container(556px, 110px);
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .modal__title {
+    width: auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__content {
+    margin-bottom: 25px;
+    font-size: 17px;
+  }
+
+  .modal__form {
+    width: 350px;
+  }
+
+  .modal__label {
+    width: 110px;
+  }
 }

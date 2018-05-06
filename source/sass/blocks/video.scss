@@ -21,3 +21,16 @@
   outline: none;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 682px;
+  }
+}

@@ -1,55 +1,93 @@
 .reviews {
-  width: 260px;
-  margin: 0 auto;
   padding-top: 30px;
-  padding-right: 30px;
   padding-bottom: 45px;
-  padding-left: 30px;
-  background-color: #fff;
 }
 
+.reviews__container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+}
 
 .reviews__title {
-  margin: 0;
+  @include opensansbold(25px, 30px);
   margin-bottom: 30px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  color: $text-title;
 }
-
-.reviews__container {}
-
-.reviews__list {}
 
 .reviews__item {
   margin: 0;
   margin-bottom: 35px;
-  padding: 0;
 }
 
 .reviews__content {
   margin: 0;
   margin-bottom: 30px;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #444;
 }
 
 .reviews__author {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000;
+  @include opensansbold(17px, 24px);
+  color: $text-title;
 }
 
-.reviews__author-email {
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-positon: left;
+  }
 
+  .reviews__container {
+    @include container(668px, 50px);
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__content {
+    font-size: 17px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+  }
+
+  .reviews__slider {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+
+  .reviews__button {
+    order: 1;
+    width: 175px;
+    margin-left: auto;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    width: 1050px;
+  }
+
+  .reviews__title,
+  .reviews__list {
+    margin-left: 175px;
+  }
+
+  .reviews__content {
+    width: 760px;
+  }
 }

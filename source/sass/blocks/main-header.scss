@@ -1,7 +1,5 @@
-.main-header {
-  width: 260px;
-  margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
-  background-color: #fff;
+@media (min-width: $tablet-width) {
+  .main-header {
+    background-image: linear-gradient(to bottom, $bg-white 88px, $bc-gray 88px, $bc-gray 89px, #f9f9f9 89px);
+  }
 }

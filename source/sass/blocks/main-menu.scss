@@ -1,31 +1,47 @@
 .main-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include listreset;
 }
 
 .main-menu__item {
-  border-bottom: 1px solid #ececec;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  box-shadow: inset 0 1px 0 $bc-gray;
 }
 
 .main-menu__link {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
+  @include main-nav-link-decoration;
+}
 
-  &:hover {
-    color: rgba(0, 0, 0, 0.6);
+@media (min-width: $tablet-width) {
+  .main-menu {
+    display: flex;
   }
 
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
+  .main-menu__item {
+    width: 167px;
+    padding-left: 0;
+    box-shadow: none;
+  }
+
+  .main-menu__link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__item {
+    &--catalog {
+      padding-right: 30px;
+      box-shadow: inset -1px 0 0 $bc-gray;
+    }
+
+    &--order {
+      padding-left: 30px;
+    }
+  }
+
+  .main-menu__link {
+    font-size: 17px;
   }
 }

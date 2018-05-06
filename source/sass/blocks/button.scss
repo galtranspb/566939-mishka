@@ -1,19 +1,17 @@
 .button {
+  @include opensansbold;
   box-sizing: border-box;
   display: inline-block;
-  // width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-
-  @include opensansbold;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   color: $text-primary;
   background-color: $bg-white;
-  border: 2px solid $text-primary;
-  outline: none;
+  border: none;
+  outline: 2px solid $text-primary;
   cursor: pointer;
 
   &:hover {
@@ -29,7 +27,7 @@
   &--modal {
     color: $bg-white;
     background-color: $bg-aqua;
-    border-color: $bg-aqua;
+    outline-color: $bg-aqua;
 
     &:hover {
       color: rgba(99, 209, 187, 1);

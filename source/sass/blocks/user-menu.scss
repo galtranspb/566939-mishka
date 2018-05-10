@@ -15,6 +15,28 @@
 
 .user-menu__link {
   @include main-nav-link-decoration;
+  position: relative;
+}
+
+.user-menu__link-icon {
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  opacity: 0.2;
+
+  path {
+    fill: $text-primary;
+  }
+
+  &--search {
+    width: 18px;
+    height: 19px;
+  }
+
+  &--cart {
+    width: 21px;
+    height: 18px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +46,7 @@
 
   .user-menu__item {
     padding-left: 0;
+    padding-top: 29px;
     box-shadow: none;
 
     &--search {
@@ -42,5 +65,17 @@
 
   .user-menu__link--search {
     font-size: 0;
+  }
+
+  .user-menu__link-icon {
+    &--search {
+      top: -14px;
+      left: 35px;
+    }
+
+    &--cart {
+      top: 3px;
+      left: -53px;
+    }
   }
 }

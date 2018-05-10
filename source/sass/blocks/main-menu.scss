@@ -20,7 +20,7 @@
 
   .main-menu__item {
     width: 167px;
-    padding-left: 0;
+    padding: 0;
     box-shadow: none;
   }
 
@@ -31,6 +31,8 @@
 
 @media (min-width: $desktop-width) {
   .main-menu__item {
+    width: 160px;
+
     &--catalog {
       padding-right: 30px;
       box-shadow: inset -1px 0 0 $bc-gray;

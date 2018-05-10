@@ -8,8 +8,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 25px;
-  right: 30px;
+  top: 20px;
+  right: 26px;
   width: 30px;
   height: 30px;
   background-color: $bg-white;
@@ -73,6 +73,7 @@
     @include container(668px, 50px);
     flex-direction: row;
     justify-content: space-between;
+    align-content: flex-start;
     align-items: baseline;
     flex-wrap: wrap;
     box-shadow: none;

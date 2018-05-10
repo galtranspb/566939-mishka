@@ -13,9 +13,9 @@
 <body>
 
   <header class="main-header">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <a class="logo main-nav__logo" href="index.html">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <a class="logo main-nav__logo">
         <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
       </a>
       <ul class="main-menu main-nav__main-menu">
@@ -54,7 +54,7 @@
         <div class="form__group form__group--type">
           <div class="form__container">
             <p class="form__group-title form__group-title--type">Тип</p>
-            <ul class="form__list form__list--type" role="none">
+            <ul class="form__list form__list--type" role="none presentation">
               <li class="form__item form__item--interior">
                 <input class="form__input form__input--radio visually-hidden" id="interior-field" name="type-of-product" type="radio" value="interior" checked>
                 <label class="form__label form__label--interior" for="interior-field">Аксессуар для интерьера</label>
@@ -69,7 +69,7 @@
         <div class="form__group form__group--color">
           <div class="form__container">
             <p class="form__group-title form__group-title--color">Цвет</p>
-            <ul class="form__list form__list--color" role="none">
+            <ul class="form__list form__list--color" role="none presentation">
               <li class="form__item form__item--white">
                 <input class="form__input form__input--checkbox visually-hidden" id="white-field" name="white" type="checkbox" checked>
                 <label class="form__label form__label--white" for="white-field">Белый</label>
@@ -100,7 +100,7 @@
         <div class="form__group form__group--fullname">
           <div class="form__container">
             <p class="form__group-title form__group-title--fullname">ФИО</p>
-            <ul class="form__list form__list--fullname" role="none">
+            <ul class="form__list form__list--fullname" role="none presentation">
               <li class="form__item form__item--first-name">
                 <label class="form__label form__label--first-name" for="first-name-field">Имя:</label>
                 <input class="form__input form__input--first-name" name="first-name" id="first-name-field" type="text" placeholder="Введите ваше имя*" required>
@@ -173,6 +173,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 
 </body>
 

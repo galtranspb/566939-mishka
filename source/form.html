@@ -51,9 +51,9 @@
       <h1 class="order__title">Вязание на заказ</h1>
       <p class="order__content">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form order__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="form__group form__group--type">
+        <div class="form__group form__group--type">
           <div class="form__container">
-            <legend class="form__group-title form__group-title--type">Тип</legend>
+            <p class="form__group-title form__group-title--type">Тип</p>
             <ul class="form__list form__list--type" role="none">
               <li class="form__item form__item--interior">
                 <input class="form__input form__input--radio visually-hidden" id="interior-field" name="type-of-product" type="radio" value="interior" checked>
@@ -65,10 +65,10 @@
               </li>
             </ul>
           </div>
-        </fieldset>
-        <fieldset class="form__group form__group--color">
+        </div>
+        <div class="form__group form__group--color">
           <div class="form__container">
-            <legend class="form__group-title form__group-title--color">Цвет</legend>
+            <p class="form__group-title form__group-title--color">Цвет</p>
             <ul class="form__list form__list--color" role="none">
               <li class="form__item form__item--white">
                 <input class="form__input form__input--checkbox visually-hidden" id="white-field" name="white" type="checkbox" checked>
@@ -96,10 +96,10 @@
               </li>
             </ul>
           </div>
-        </fieldset>
-        <fieldset class="form__group form__group--fullname">
+        </div>
+        <div class="form__group form__group--fullname">
           <div class="form__container">
-            <legend class="form__group-title form__group-title--fullname">ФИО</legend>
+            <p class="form__group-title form__group-title--fullname">ФИО</p>
             <ul class="form__list form__list--fullname" role="none">
               <li class="form__item form__item--first-name">
                 <label class="form__label form__label--first-name" for="first-name-field">Имя:</label>
@@ -115,24 +115,27 @@
               </li>
             </ul>
           </div>
-        </fieldset>
+        </div>
         <div class="form__group form__group--tel">
-          <p class="form__container">
-            <label class="form__group-title form__group-title--tel" for="tel-field">Тел</label>
+          <div class="form__container">
+            <p class="form__group-title form__group-title--tel">Тел</p>
+            <label class="visually-hidden" for="tel-field">Укажите Ваш телефон в формате +7 XXX XX XX</label>
             <input class="form__input form__input--tel" id="tel-field" type="tel" placeholder="+7 XXX XX XX*" required>
-          </p>
+          </div>
         </div>
         <div class="form__group form__group--email">
-          <p class="form__container">
-            <label class="form__group-title form__group-title--email" for="email-field">E-mail</label>
+          <div class="form__container">
+            <p class="form__group-title form__group-title--email">E-mail</p>
+            <label class="visually-hidden" for="email-field">Укажите Ваш почтовый адрес</label>
             <input class="form__input form__input--email" id="email-field" type="email" placeholder="Ваш Email*" required>
-          </p>
+          </div>
         </div>
         <div class="form__group form__group--textarea">
-          <p class="form__container">
-            <label class="form__group-title form__group-title--email" for="comment-field">Доп</label>
+          <div class="form__container">
+            <p class="form__group-title form__group-title--textarea">Доп</p>
+            <label class="visually-hidden" for="comment-field">Опишите все ваши пожелания к заказу</label>
             <textarea class="form__input form__input--textarea" id="comment-field" name="comment">Опишите все ваши пожелания к заказу</textarea>
-          </p>
+          </div>
         </div>
         <div class="form__container">
           <p class="form__content">*Поля обязательны для заполнения</p>

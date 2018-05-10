@@ -5,17 +5,12 @@
 }
 
 .form__group {
-  padding: 0;
-  border: none;
-
   &--type {
     padding-top: 30px;
-    padding-bottom: 35px;
   }
 
   &--color {
     padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   &--fullname {
@@ -30,7 +25,7 @@
 
   &--email {
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
 
   &--textarea {
@@ -41,19 +36,26 @@
 
 .form__container {
   @include container;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .form__group-title {
   @include opensansbold(17px, 16px);
+  margin: 0;
   text-transform: uppercase;
   color: $bg-aqua;
+
+  &--type,
+  &--color {
+    margin-bottom: 30px;
+  }
+
+  &--fullname {
+    margin-bottom: 25px;
+  }
 
   &--tel,
   &--email,
   &--textarea {
-    display: block;
     margin-bottom: 20px;
   }
 }
@@ -155,9 +157,12 @@
 
 @media (min-width: $tablet-width) {
   .form__group {
+    &--type {
+      padding-bottom: 60px;
+    }
+
     &--color {
       padding-top: 60px;
-      padding-bottom: 0;
     }
 
     &--fullname {
@@ -194,13 +199,13 @@
   }
 
   .form__group-title {
-    flex-shrink: 0;
     width: 167px;
   }
 
   .form__list--color {
     display: flex;
     flex-wrap: wrap;
+    width: 501px;
   }
 
   .form__item {
@@ -278,12 +283,16 @@
     width: 1050px;
   }
 
+  .form__list--color {
+    width: 875px;
+  }
+
   .form__item {
-    width: 210px;
+    width: 180px;
 
     &--interior,
     &--toys {
-      width: 350px;
+      width: 270px;
     }
 
     &--first-name,

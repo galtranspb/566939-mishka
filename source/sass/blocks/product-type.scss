@@ -1,7 +1,6 @@
 .product-type {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   padding-top: 70px;
   background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
@@ -29,8 +28,8 @@
 .product-type__item {
   display: flex;
   justify-content: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 25px;
+  padding-bottom: 29px;
   background-color: $bg-aqua;
 
   &:last-child {
@@ -89,14 +88,14 @@
 @media (min-width: $tablet-width) {
   .product-type {
     position: relative;
-    padding-top: 95px;
-    background-position: center -55px;
+    padding-top: 115px;
+    background-position: center -40px;
     background-size: 1150px 746px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: -3px;
       width: 770px;
       height: 24px;
       background-color: transparent;
@@ -106,7 +105,7 @@
 
   .product-type__content {
     width: auto;
-    margin-bottom: 375px;
+    margin-bottom: 370px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -119,6 +118,7 @@
   .product-type__item {
     justify-content: flex-start;
     width: 50%;
+    padding-top: 27px;
     padding-bottom: 43px;
     padding-left: 30px;
   }
@@ -147,22 +147,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-type {
-    padding-top: 80px;
-    background-position: center -70px;
-
-    &::after {
-      right: 10px;
-      width: 1250px;
-      height: 34px;
-      background-image: url("../img/zigzag-fill-desktop.png");
-    }
+  .product-type::after {
+    bottom: -1px;
+    right: 7px;
+    width: 1250px;
+    height: 34px;
+    background-image: url("../img/zigzag-fill-desktop.png");
   }
 
   .product-type__content {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 360px;
+    margin-bottom: 357px;
   }
 
   .product-type__list {

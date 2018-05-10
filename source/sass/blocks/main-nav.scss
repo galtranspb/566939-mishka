@@ -1,5 +1,4 @@
 .main-nav {
-  @include container;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -43,6 +42,12 @@
   margin-bottom: 22px;
 }
 
+.main-nav__main-menu,
+.main-nav__user-menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-nav__add-menu {
   display: none;
 }
@@ -51,18 +56,13 @@
   @include opensans;
   order: 5;
   display: none;
+  margin: 0;
   color: $text-primary;
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-menu__item {
-    display: none;
-  }
-
-  .main-nav--closed .user-menu__item {
-    display: none;
-  }
-
+  .main-nav--closed .main-menu__item,
+  .main-nav--closed .user-menu__item,
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -73,8 +73,6 @@
     @include container(668px, 50px);
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-start;
-    align-items: baseline;
     flex-wrap: wrap;
     box-shadow: none;
   }
@@ -84,15 +82,21 @@
   }
 
   .main-nav__logo {
-    margin: 0;
+    margin-bottom: 20px;
   }
 
   .main-nav__main-menu {
     order: 2;
+    flex-direction: row;
+  }
+
+  .main-nav__user-menu {
+    flex-direction: row;
   }
 
   .main-nav__delivery {
     display: block;
+    margin-top: 15px;
   }
 }
 
@@ -102,7 +106,8 @@
   }
 
   .main-nav__logo {
-    margin-bottom: -10px;
+    margin-top: 9px;
+    margin-bottom: 7px;
   }
 
   .main-nav__main-menu {

@@ -16,6 +16,18 @@
 .user-menu__link {
   @include main-nav-link-decoration;
   position: relative;
+
+  &:hover .user-menu__link-icon {
+    opacity: 1;
+
+    path {
+      fill: $bg-aqua;
+    }
+  }
+
+  &:active .user-menu__link-icon {
+    opacity: 0.3;
+  }
 }
 
 .user-menu__link-icon {
@@ -25,7 +37,7 @@
   opacity: 0.2;
 
   path {
-    fill: $text-primary;
+    fill: $text-title;
   }
 
   &--search {

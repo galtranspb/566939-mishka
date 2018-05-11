@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 45px;
 }
 
@@ -11,13 +11,14 @@
 
 .reviews__title {
   @include opensansbold(25px, 30px);
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
   color: $text-title;
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .reviews__content {
@@ -31,11 +32,32 @@
   color: $text-title;
 }
 
+.reviews__author-email {
+  line-height: 30px;
+  color: $text-primary;
+}
+
+.reviews__slider {
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
-    background-image: url("../../img/review@1x.jpg");
+    position: relative;
+    padding-top: 78px;
+    padding-bottom: 90px;
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-positon: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 17px;
+      background-image: url("../img/zigzag-line-tablet.png");
+    }
   }
 
   .reviews__container {
@@ -43,10 +65,11 @@
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .reviews__title {
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -55,7 +78,14 @@
     order: 2;
   }
 
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
   .reviews__content {
+    margin-bottom: 55px;
     font-size: 17px;
   }
 
@@ -78,8 +108,33 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 90px;
+    background: none;
+
+    &::after {
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.png");
+    }
+  }
+
   .reviews__container {
     width: 1050px;
+    padding-top: 70px;
+    padding-bottom: 95px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left 50px top 0;
+    background-size: 350px 457px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .reviews__title,
@@ -87,7 +142,21 @@
     margin-left: 175px;
   }
 
+  .reviews__item {
+    margin-bottom: 0;
+  }
+
   .reviews__content {
     width: 760px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__slider {
+    bottom: 57px;
+    right: 48px;
+  }
+
+  .reviews__button {
+    margin-top: 10px;
   }
 }

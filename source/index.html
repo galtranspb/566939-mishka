@@ -131,8 +131,12 @@
           </blockquote>
         </div>
         <p class="slider__toggles reviews__slider">
-          <button class="slider__toggle" type="button">Предыдущий отзыв</button>
-          <button class="slider__toggle" type="button">Следующий отзыв</button>
+          <button class="slider__toggle slider__toggle--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="slider__toggle slider__toggle--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
         </p>
         <a class="button reviews__button" href="#">Написать</a>
       </div>
@@ -208,10 +212,10 @@
     if(true) {
       $(function(){
         $.pixlayout({
-          src: "_assets/mishka-index-mobile.jpg",
+          // src: "_assets/mishka-index-mobile.jpg",
           // src: "_assets/mishka-index-tablet.jpg",
-          // src: "_assets/mishka-index-desktop.jpg",
-          opacity: 0.3,
+          src: "_assets/mishka-index-desktop.jpg",
+          opacity: 0.4,
           top: -2,
           center: true,
           clip: true,

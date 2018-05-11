@@ -69,7 +69,20 @@
 
 @media (min-width: $tablet-width) {
   .promotion {
+    display: flex;
+    justify-content: center;
+    position: relative;
     padding-top: 35px;
+    padding-bottom: 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 17px;
+      background-image: url("../img/zigzag-line-tablet.png");
+    }
   }
 
   .promotion__container {
@@ -138,6 +151,12 @@
   .promotion {
     padding-top: 108px;
     padding-bottom: 70px;
+
+    &::after {
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.png");
+    }
   }
 
   .promotion__container {

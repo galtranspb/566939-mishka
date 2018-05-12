@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-image: linear-gradient(to bottom, #f9f9f9 175px, $bg-white 175px);
 }
 
@@ -22,6 +22,10 @@
 .catalog__item {
   margin-bottom: 35px;
   outline: 1px solid $bc-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__link {
@@ -87,7 +91,22 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    position: relative;
     padding-top: 55px;
+    padding-bottom: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      top: 170px;
+      left: 0;
+      background-image: url("../img/zigzag-catalog-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
   }
 
   .catalog__title {
@@ -104,6 +123,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 55px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .catalog__link {
@@ -147,6 +170,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    background-image: linear-gradient(to bottom, #f9f9f9 210px, $bg-white 210px);
+
+    &::before {
+      top: 200px;
+      height: 34px;
+      background-image: url("../img/zigzag-catalog-desktop.png");
+    }
+  }
+
   .catalog__title {
     font-size: 53px;
     line-height: 57px;

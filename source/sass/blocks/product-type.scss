@@ -9,7 +9,7 @@
   background-size: 575px 373px;
 }
 
-.product-type__content {
+.product-type__title {
   @include opensansbold(27px, 30px);
   align-self: center;
   width: 260px;
@@ -28,8 +28,6 @@
 .product-type__item {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 29px;
   background-color: $bg-aqua;
 
   &:last-child {
@@ -40,9 +38,10 @@
 .product-type__link {
   @include opensansbold(19px, 24px);
   position: relative;
-  display: block;
-  width: 120px;
-  padding-right: 140px;
+  display: flex;
+  width: 260px;
+  padding-top: 25px;
+  padding-bottom: 29px;
   text-decoration: none;
   color: $bg-white;
 
@@ -61,7 +60,7 @@
   }
 
   &--interior::after {
-    top: -5px;
+    top: 20px;
     right: 5px;
     width: 40px;
     height: 62px;
@@ -69,7 +68,7 @@
   }
 
   &--toys::after {
-    top: -5px;
+    top: 20px;
     right: -3px;
     width: 60px;
     height: 60px;
@@ -85,6 +84,11 @@
   }
 }
 
+.product-type__content {
+  width: 120px;
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .product-type {
     position: relative;
@@ -96,14 +100,16 @@
       content: "";
       position: absolute;
       bottom: -3px;
+      align-self: center;
       width: 770px;
       height: 24px;
       background-color: transparent;
       background-image: url("../img/zigzag-fill-tablet.png");
+      background-repeat: no-repeat;
     }
   }
 
-  .product-type__content {
+  .product-type__title {
     width: auto;
     margin-bottom: 370px;
     font-size: 43px;
@@ -118,44 +124,48 @@
   .product-type__item {
     justify-content: flex-start;
     width: 50%;
-    padding-top: 27px;
-    padding-bottom: 43px;
-    padding-left: 30px;
   }
 
   .product-type__link {
-    width: 120px;
-    padding-right: 12px;
-    padding-left: 5px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 43px;
     font-size: 20px;
     line-height: 30px;
 
     &--interior::after {
-      top: 4px;
-      right: -133px;
+      top: 30px;
+      right: 35px;
       width: 42px;
       height: 62px;
     }
 
     &--toys::after {
-      top: 4px;
-      right: -133px;
+      top: 30px;
+      right: 35px;
       width: 61px;
       height: 61px;
     }
   }
+
+  .product-type__content {
+    margin-left: 35px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .product-of-type {
+    display: flex;
+  }
+
   .product-type::after {
     bottom: -1px;
-    right: 7px;
     width: 1250px;
-    height: 34px;
+    height: 24px;
     background-image: url("../img/zigzag-fill-desktop.png");
   }
 
-  .product-type__content {
+  .product-type__title {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 357px;
@@ -165,19 +175,15 @@
     width: 1050px;
   }
 
-  .product-type__item {
-    padding-bottom: 49px;
-  }
-
   .product-type__link {
-    padding-right: 20px;
+    padding-bottom: 38px;
 
     &--interior::after {
-      right: -313px;
+      right: 33px;
     }
 
     &--toys::after {
-      right: -313px;
+      right: 33px;
     }
   }
 }

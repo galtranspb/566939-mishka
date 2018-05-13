@@ -110,6 +110,7 @@
   position: relative;
   display: block;
   color: $text-title;
+  cursor: pointer;
 
   &--interior::before,
   &--toys::before,

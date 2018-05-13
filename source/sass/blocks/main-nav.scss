@@ -66,6 +66,11 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .main-menu__item,
+  .main-nav--nojs .user-menu__item {
+    display: flex;
+  }
 }
 
 @media (min-width: $tablet-width) {

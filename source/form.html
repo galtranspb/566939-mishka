@@ -129,14 +129,14 @@
         <div class="form__group form__group--tel">
           <div class="form__container">
             <p class="form__group-title form__group-title--tel">Тел</p>
-            <label class="visually-hidden" for="tel-field">Укажите Ваш телефон в формате +7 XXX XX XX</label>
+            <label class="form__label form__label--tel visually-hidden" for="tel-field">Укажите Ваш телефон в формате +7 XXX XX XX</label>
             <input class="form__input form__input--tel" id="tel-field" type="tel" placeholder="+7 XXX XX XX*" required>
           </div>
         </div>
         <div class="form__group form__group--email">
           <div class="form__container">
             <p class="form__group-title form__group-title--email">E-mail</p>
-            <label class="visually-hidden" for="email-field">Укажите Ваш почтовый адрес</label>
+            <label class="form__label form__label--email visually-hidden" for="email-field">Укажите Ваш почтовый адрес</label>
             <input class="form__input form__input--email" id="email-field" type="email" placeholder="Ваш Email*" required>
           </div>
         </div>
@@ -195,9 +195,9 @@
     if(true) {
       $(function(){
         $.pixlayout({
-          src: "_assets/mishka-form-mobile.jpg",
+          // src: "_assets/mishka-form-mobile.jpg",
           // src: "_assets/mishka-form-tablet.jpg",
-          // src: "_assets/mishka-form-desktop.jpg",
+          src: "_assets/mishka-form-desktop.jpg",
           opacity: 0.4,
           top: -2,
           center: true,

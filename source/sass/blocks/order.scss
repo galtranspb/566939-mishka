@@ -1,7 +1,7 @@
 .order {
   padding-top: 70px;
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   // align-items: center;
   // margin-right: auto;
   // margin-left: auto;
@@ -20,7 +20,7 @@
   width: 245px;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-left: auto;
   padding-right: 45px;
   padding-left: 30px;
@@ -73,14 +73,14 @@
   }
 
   .order__title {
-    margin-bottom: 220px;
+    margin-bottom: 227px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .order__content {
     width: 700px;
-    pading-right: 225px;
-    pading-left: 225px;
+    padding-right: 225px;
+    padding-left: 225px;
   }
 }

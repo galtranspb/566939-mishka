@@ -45,6 +45,10 @@
   padding: 25px;
 }
 
+.catalog__title-link {
+  text-decoration: none;
+}
+
 .catalog__item-title {
   @include opensansbold(17px, 24px);
   margin-top: 0;
@@ -102,7 +106,7 @@
       height: 24px;
       top: 170px;
       left: 0;
-      background-image: url("../img/zigzag-catalog-tablet.png");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;

@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-position: center -20px;
   background-size: 575px 373px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
 
 .product-type__title {
@@ -93,6 +97,7 @@
   .product-type {
     position: relative;
     padding-top: 115px;
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center -40px;
     background-size: 1150px 746px;
 
@@ -104,8 +109,12 @@
       width: 770px;
       height: 24px;
       background-color: transparent;
-      background-image: url("../img/zigzag-fill-tablet.png");
+      // background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 
@@ -154,15 +163,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-of-type {
+  .product-type {
     display: flex;
-  }
+    background-image: url("../img/hero-desktop@1x.jpg");
 
-  .product-type::after {
-    bottom: -1px;
-    width: 1250px;
-    height: 24px;
-    background-image: url("../img/zigzag-fill-desktop.png");
+    .product-type::after {
+      bottom: -1px;
+      width: 1250px;
+      height: 24px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .product-type__title {

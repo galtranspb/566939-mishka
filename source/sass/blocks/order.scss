@@ -1,16 +1,17 @@
 .order {
-  // display: flex;
-  // flex-direction: column;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
   // align-items: center;
   // margin-right: auto;
   // margin-left: auto;
-  background-image: linear-gradient(to bottom, $bg-gray 175px, $bg-white 175px);
+  background-image: linear-gradient(to bottom, #f9f9f9 175px, $bg-white 175px);
 }
 
 .order__title {
   @include opensansbold(27px, 30px);
-  margin-bottom: 100px;
-  padding-top: 75px;
+  margin-top: 0;
+  margin-bottom: 97px;
   text-align: center;
   color: $text-title;
 }
@@ -19,22 +20,33 @@
   width: 245px;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-left: auto;
   padding-right: 45px;
   padding-left: 30px;
   font-size: 13px;
 }
 
-.order__form {
-  // margin-right: auto;
-  // margin-left: auto;
-}
-
 @media (min-width: $tablet-width) {
+  .order {
+    position: relative;
+    padding-top: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 170px;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-catalog-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+  }
+
   .order__title {
     margin-bottom: 160px;
-    padding-top: 30px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -50,15 +62,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order {
+    background-image: linear-gradient(to bottom, #f9f9f9 210px, $bg-white 210px);
+
+    &::before {
+      height: 34px;
+      top: 200px;
+      background-image: url("../img/zigzag-catalog-desktop.png");
+    }
+  }
+
   .order__title {
-    margin-bottom: 220px;
+    margin-bottom: 227px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .order__content {
     width: 700px;
-    pading-right: 225px;
-    pading-left: 225px;
+    padding-right: 225px;
+    padding-left: 225px;
   }
 }

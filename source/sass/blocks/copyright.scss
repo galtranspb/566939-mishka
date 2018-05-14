@@ -2,11 +2,27 @@
   @include opensansbold(19px, 18px);
   display: flex;
   align-items: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
   color: $text-title;
 }
 
 .copyright__content {
   margin-right: 30px;
+}
+
+.copyright__link {
+  fill: $bg-aqua;
+
+  &:hover {
+    fill: $bg-turquoise;
+  }
+
+  &:active {
+    fill: $bg-turquoise;
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  width: 27px;
+  height: 34px;
 }

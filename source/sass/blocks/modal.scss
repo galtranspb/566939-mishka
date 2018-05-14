@@ -1,6 +1,7 @@
 .modal {
   @include container;
-  display: flex;
+  // display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding-top: 35px;

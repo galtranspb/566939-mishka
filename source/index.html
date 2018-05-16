@@ -16,7 +16,11 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <a class="logo main-nav__logo">
-        <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+        </picture>
       </a>
       <ul class="main-menu main-nav__main-menu">
         <li class="main-menu__item main-menu__item--catalog">
@@ -94,7 +98,11 @@
             </tr>
           </tbody>
         </table>
-        <img class="promotion__image" width="260" height="315" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка серого цвета, диаметром 25 сантиметров и высотой 15 сантиметов">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="promotion__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаная корзинка серого цвета, диаметром 25 сантиметров и высотой 15 сантиметов">
+        </picture>
         <p class="promotion__price">Цена: 990 руб.</p>
         <a class="button promotion__button" href="modal.html">Заказать</a>
       </div>
@@ -157,7 +165,11 @@
           </p>
         </div>
         <a class="contacts__link" href="https://yandex.ru/maps/2/saint-petersburg/?mode=search&ol=geo&ll=30.323527%2C59.938674&z=17&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8%2520" target="_blank">
-          <img class="contacts__image" width="322" height="457" src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная, д. 19/8, офис 101">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
         </a>
         <a class="button contacts__button" href="feedback-form.html">Напишите нам</a>
       </div>
@@ -180,7 +192,7 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <a class="logo logo--footer main-footer__logo">
-        <img class="logo__image" width="102" height="34" src="img/logo-mobile.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
+        <img class="logo__image" width="102" height="34" src="img/logo-footer.svg" alt="Мишка - интернет магазин милых вещей для дома ручной работы">
       </a>
       <ul class="social main-footer__social">
         <li class="social__item">

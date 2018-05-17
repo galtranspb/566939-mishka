@@ -22,11 +22,8 @@
   padding-left: 85px;
 
   &:hover .user-menu__link-icon {
+    fill: $bg-turquoise;
     opacity: 1;
-
-    path {
-      fill: $bg-aqua;
-    }
   }
 
   &:active .user-menu__link-icon {
@@ -39,10 +36,7 @@
   top: 2px;
   left: 33px;
   opacity: 0.2;
-
-  path {
-    fill: $text-title;
-  }
+  fill: $text-title;
 
   &--search {
     width: 18px;

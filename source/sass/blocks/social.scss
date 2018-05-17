@@ -15,25 +15,30 @@
 }
 
 .social__link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: $text-title;
 
+  &:hover {
+    fill: $bg-turquoise;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link-icon {
   &--instagram {
     width: 22px;
     height: 22px;
-    background-image: url("../img/icon-insta.svg");
   }
 
   &--facebook {
     width: 15px;
     height: 28px;
-    background-image: url("../img/icon-fb.svg");
   }
 
   &--twitter {
     width: 24px;
     height: 21px;
-    background-image: url("../img/icon-twitter.svg");
   }
 }

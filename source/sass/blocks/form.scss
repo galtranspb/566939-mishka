@@ -31,6 +31,7 @@
 
 .form__container {
   @include container;
+  position: relative;
 }
 
 .form__group-title {
@@ -216,6 +217,27 @@
   }
 }
 
+.form__icon {
+  position: absolute;
+  top: 33px;
+  right: 37px;
+  fill: $text-title;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.form__input--tel:hover + .form__icon,
+.form__input--email:hover + .form__icon {
+  fill: $bg-aqua;
+  opacity: 1;
+}
+
+.form__input--tel:focus + .form__icon,
+.form__input--email:focus + .form__icon {
+  fill: $bg-aqua;
+  opacity: 1;
+}
+
 .form__content {
   margin-top: 0;
   margin-bottom: 32px;
@@ -382,6 +404,11 @@
     }
   }
 
+  .form__icon {
+    top: 3px;
+    right: 73px;
+  }
+
   .form__content {
     margin-top: 10px;
     font-size: 17px;
@@ -455,6 +482,11 @@
     &--patronymic {
       width: 573px;
     }
+  }
+
+  .form__icon {
+    top: 3px;
+    right: 230px;
   }
 
   .form__content {

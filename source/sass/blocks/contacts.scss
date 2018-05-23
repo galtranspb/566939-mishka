@@ -135,7 +135,7 @@
   .contacts__wrapper {
     flex-direction: column;
     width: 350px;
-    margin-left: 175px;
+    margin-left: 170px;
     padding: 0;
   }
 
@@ -147,18 +147,20 @@
     &::after {
       top: -8px;
       right: auto;
-      left: -112px;
+      left: -107px;
     }
   }
 
   .contacts__email {
     width: auto;
     margin-bottom: 30px;
+    margin-left: 5px;
   }
 
   .contacts__address {
     width: auto;
     margin-bottom: 0;
+    margin-left: 5px;
   }
 
   .contacts__link {

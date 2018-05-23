@@ -177,8 +177,8 @@
   &--textarea {
     width: 260px;
     min-height: 140px;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
     font-size: 17px;
     line-height: 18px;
     outline: 1px solid $text-primary;
@@ -220,7 +220,7 @@
 .form__icon {
   position: absolute;
   top: 33px;
-  right: 37px;
+  right: 36px;
   fill: $text-title;
   opacity: 0.2;
   cursor: pointer;
@@ -252,7 +252,7 @@
 @media (min-width: $tablet-width) {
   .form {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   .form__group {
@@ -410,7 +410,7 @@
   }
 
   .form__content {
-    margin-top: 10px;
+    margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
   }

@@ -23,19 +23,19 @@
 }
 
 .modal-map__image {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+}
 
-  @media (min-width: $tablet-width) {
-    .modal-map__container {
-      width: 768px;
-    }
+@media (min-width: $tablet-width) {
+  .modal-map__container {
+    width: 768px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .modal-map__container {
-      width: 1150px;
-      height: 685px;
-    }
+@media (min-width: $desktop-width) {
+  .modal-map__container {
+    width: 1150px;
+    height: 685px;
   }
+}

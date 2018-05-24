@@ -1,5 +1,8 @@
 .reviews {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 35px;
   padding-bottom: 50px;
 
@@ -11,8 +14,7 @@
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 320px 6px;
+    background-size: contain;
   }
 }
 
@@ -73,7 +75,6 @@
       height: 17px;
       background-repeat: repeat-x;
       background-position: left 27px top;
-      background-size: 768px 17px;
     }
   }
 
@@ -127,7 +128,8 @@
 @media (min-width: $desktop-width) {
   .reviews {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 0;
     padding-bottom: 90px;
     background: none;
@@ -135,7 +137,6 @@
     &::after {
       width: 1050px;
       height: 23px;
-      background-size: 1050px 23px;
     }
   }
 

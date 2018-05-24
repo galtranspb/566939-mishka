@@ -1,7 +1,6 @@
 .catalog {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 70px;
   padding-bottom: 20px;
   background-image: linear-gradient(to bottom, #f1f1f1 175px, $bg-white 175px);
@@ -11,6 +10,7 @@
   @include opensansbold(27px, 30px);
   margin-top: 0;
   margin-bottom: 105px;
+  text-align: center;
   color: $text-title;
 }
 
@@ -114,8 +114,10 @@
       top: 165px;
       width: 100%;
       height: 24px;
+      // align-self: stretch;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
+      background-position: bottom 50px;
       background-size: 770px 24px;
     }
   }
@@ -188,6 +190,7 @@
       top: 195px;
       height: 34px;
       background-size: 1250px 34px;
+      background-position: bottom 50px;
     }
   }
 

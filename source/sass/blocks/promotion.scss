@@ -10,10 +10,12 @@
     content: "";
     position: absolute;
     bottom: 0;
-    // width: 100%;
-    width: 319px;
+    width: 320px;
     height: 6px;
-    // background-image: url("../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repreat: no-repeat;
+    background-position: center top;
+    background-size: 320px 6px;
   }
 }
 
@@ -22,8 +24,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  // outline: 1px solid red;
 }
 
 .promotion__title {
@@ -84,15 +84,14 @@
 
 @media (min-width: $tablet-width) {
   .promotion {
-    // display: flex;
-    // justify-content: center;
     padding-top: 35px;
     padding-bottom: 63px;
 
     &::after {
       width: 768px;
       height: 17px;
-      // background-image: url("../img/zigzag-line-tablet.png");
+      background-position: left 27px top;
+      background-size: 768px 17px;
     }
   }
 
@@ -166,7 +165,7 @@
     &::after {
       width: 1050px;
       height: 23px;
-      // background-image: url("../img/zigzag-line-desktop.png");
+      background-size: 1050px 23px;
     }
   }
 

@@ -13,7 +13,7 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-var modalButton = document.querySelector(".button--js");
+var modalButton = document.querySelector(".button-js");
 var modalPopup = document.querySelector(".modal");
 
 modalButton.addEventListener("click", function (event) {

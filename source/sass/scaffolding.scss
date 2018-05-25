@@ -38,6 +38,20 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.sprite {
-  display: none;
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(-47%);
+  }
+
+  90% {
+    transform: translateY(-53%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
 }

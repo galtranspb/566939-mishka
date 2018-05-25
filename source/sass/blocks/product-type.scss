@@ -48,10 +48,6 @@
   text-decoration: none;
   color: $bg-white;
 
-  &:hover {
-    // padding-bottom: 32px;
-  }
-
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -110,9 +106,9 @@
       align-self: center;
       width: 770px;
       height: 24px;
-      background-color: transparent;
-      // background-image: url("../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
+      background-size: 770px 24px;
     }
   }
 
@@ -168,10 +164,11 @@
     display: flex;
     background-image: url("../img/hero-desktop@1x.jpg");
 
-    .product-type::after {
+    &::after {
       bottom: -1px;
       width: 1250px;
       height: 24px;
+      background-size: 1250px 34px;
     }
   }
 

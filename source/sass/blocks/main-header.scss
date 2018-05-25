@@ -1,5 +1,9 @@
 @media (min-width: $tablet-width) {
   .main-header {
-    background-image: linear-gradient(to bottom, $bg-white 87px, $bc-gray 87px, $bc-gray 88px, #f9f9f9 88px);
+    background-image: linear-gradient(to bottom, $bg-white 87px, $bc-gray 87px, $bc-gray 88px, #f1f1f1 88px);
+
+    &--index {
+      background-image: linear-gradient(to bottom, $bg-white 87px, $bc-gray 87px, $bc-gray 88px, #f9f9f9 88px);
+    }
   }
 }

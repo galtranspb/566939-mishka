@@ -189,19 +189,23 @@
       </div>
     </section>
     <section class="modal">
-      <h2 class="modal__title">Добваить в корзину</h2>
-      <p class="modal__content">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <input class="modal__input visually-hidden" id="size-s-field" name="size-s" type="checkbox" checked>
-        <label class="modal__label" for="size-s-field">S</label>
-        <input class="modal__input visually-hidden" id="size-m-field" name="size-m" type="checkbox">
-        <label class="modal__label" for="size-m-field">M</label>
-        <input class="modal__input visually-hidden" id="size-l-field" name="size-l" type="checkbox">
-        <label class="modal__label" for="size-l-field">L</label>
-        <button class="button button--modal modal__button" type="submit">Добавить</button>
-      </form>
+      <div class="overlay"></div>
+      <div class="modal__container">
+        <h2 class="modal__title">Добваить в корзину</h2>
+        <p class="modal__content">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="modal__input visually-hidden" id="size-s-field" name="size-s" type="checkbox" checked>
+          <label class="modal__label" for="size-s-field">S</label>
+          <input class="modal__input visually-hidden" id="size-m-field" name="size-m" type="checkbox">
+          <label class="modal__label" for="size-m-field">M</label>
+          <input class="modal__input visually-hidden" id="size-l-field" name="size-l" type="checkbox">
+          <label class="modal__label" for="size-l-field">L</label>
+          <button class="button button--modal modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
     <section class="modal-map">
+      <div class="overlay"></div>
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="modal-map__container"></div>
     </section>

@@ -43,10 +43,12 @@ window.addEventListener("keydown", function (event) {
 var mapLink = document.querySelector(".contacts__link");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".overlay");
+var mapContainer = mapPopup.querySelector(".modal-map__container");
 
 mapLink.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("modal-map--show");
+  mapContainer.style.position = "fixed";
 });
 
 mapClose.addEventListener("click", function (event) {

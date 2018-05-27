@@ -81,20 +81,11 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 })
 
-// gulp.task("compress", function (cb) {
-//   pump([
-//     gulp.src("source/*.js"),
-//     uglify(),
-//     gulp.dest("build/")
-//     ],
-//     cb
-//   );
-// });
-
 gulp.task("compress", function () {
-    gulp.src("source/*.js")
+    gulp.src("source/js/main.js")
     .pipe(uglify())
-    .pipe(gulp.dest("build"));
+    .pipe(rename("main.min.js"))
+    .pipe(gulp.dest("build/js/"));
 })
 
 gulp.task("build", function (done) {

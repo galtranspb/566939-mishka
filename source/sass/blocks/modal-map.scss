@@ -3,12 +3,12 @@
 
   &--show {
     display: block;
+    animation: show-up 0.1s;
   }
 }
 
 .modal-map__container {
-  // перебиваю стили скрипта с гугл апи
-  position: fixed !important;
+  position: fixed;
   z-index: 11;
   top: 50%;
   left: 50%;

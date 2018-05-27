@@ -40,6 +40,10 @@
   color: $text-primary;
 }
 
+.modal__form {
+  width: 260px;
+}
+
 .modal__label {
   @include opensansbold(17px, 16px);
   display: inline-block;

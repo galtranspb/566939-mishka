@@ -40,7 +40,9 @@
   display: flex;
   width: 260px;
   padding-top: 25px;
+  padding-right: 30px;
   padding-bottom: 29px;
+  padding-left: 30px;
   text-decoration: none;
   color: $bg-white;
   background-color: $bg-aqua;
@@ -61,7 +63,7 @@
 
   &--interior::after {
     top: 20px;
-    right: 5px;
+    right: 35px;
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
@@ -69,7 +71,7 @@
 
   &--toys::after {
     top: 20px;
-    right: -3px;
+    right: 28px;
     width: 60px;
     height: 60px;
     background-image: url("../img/icon-toy.svg");
@@ -134,7 +136,9 @@
   .product-type__link {
     width: 100%;
     padding-top: 27px;
+    padding-right: 0;
     padding-bottom: 43px;
+    padding-left: 0;
     font-size: 20px;
     line-height: 30px;
 

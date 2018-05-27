@@ -1,6 +1,5 @@
 .modal-map {
   display: none;
-  // display: block;
 
   &--show {
     display: block;
@@ -8,7 +7,8 @@
 }
 
 .modal-map__container {
-  position: fixed;
+  // перебиваю стили скрипта с гугл апи
+  position: fixed !important;
   z-index: 11;
   top: 50%;
   left: 50%;

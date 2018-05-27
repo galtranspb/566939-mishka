@@ -26,7 +26,7 @@ gulp.task ("clean", function () {
 gulp.task ("copy", function() {
   return gulp.src ([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/*.{svg,jpeg}",
     "source/js/**"
     ], {
       base: "source"
@@ -64,7 +64,7 @@ gulp.task("webp", function () {
 })
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/*{icon-search.svg,icon-cart.svg,logo-footer.svg,icon-insta.svg,icon-fb.svg,icon-twitter.svg,logo-htmlacademy.svg,icon-phone.svg,icon-mail.svg}")
+  return gulp.src("source/img/sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))

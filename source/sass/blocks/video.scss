@@ -3,6 +3,7 @@
     background-image: url("../img/video-mobile@2x.jpg");
   }
   position: relative;
+  display: flex;
   width: 260px;
   height: 150px;
   background-color: $bg-gray;
@@ -18,11 +19,20 @@
   transform: translate(-50%, -50%);
   width: 101px;
   height: 77px;
+  margin: auto;
   background-color: transparent;
   background-image: url("../img/icon-play.svg");
   border: none;
   outline: none;
   cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 @media (min-width: $tablet-width) {

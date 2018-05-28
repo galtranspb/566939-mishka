@@ -24,6 +24,10 @@
     background-color: $text-primary;
   }
 
+  &:focus {
+    outline: 2px solid skyblue;
+  }
+
   &--modal {
     color: $bg-white;
     background-color: $bg-aqua;

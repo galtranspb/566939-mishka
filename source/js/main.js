@@ -13,13 +13,19 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-var modalButton = document.querySelector(".button-js");
+var modalButton = document.querySelectorAll(".button-js");
 var modalPopup = document.querySelector(".modal");
+var modalClose = modalPopup.querySelector(".overlay");
 
-modalButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  modalPopup.classList.add("modal--show");
+for (var i = 0; i < modalButton.length; i++) {
+  modalButton[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    modalPopup.classList.add("modal--show");
+  });
+}
 
+modalClose.addEventListener("click", function (event) {
+  modalPopup.classList.remove("modal--show");
 });
 
 window.addEventListener("keydown", function (event) {
@@ -36,10 +42,17 @@ window.addEventListener("keydown", function (event) {
 
 var mapLink = document.querySelector(".contacts__link");
 var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".overlay");
+var mapContainer = mapPopup.querySelector(".modal-map__container");
 
 mapLink.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("modal-map--show");
+  mapContainer.style.position = "fixed";
+});
+
+mapClose.addEventListener("click", function (event) {
+  mapPopup.classList.remove("modal-map--show");
 });
 
 function initMap() {

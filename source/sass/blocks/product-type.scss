@@ -24,6 +24,7 @@
 
 .product-type__list {
   @include listreset;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -31,11 +32,6 @@
 .product-type__item {
   display: flex;
   justify-content: center;
-  background-color: $bg-aqua;
-
-  &:last-child {
-    background-color: #56c3b2;
-  }
 }
 
 .product-type__link {
@@ -44,9 +40,16 @@
   display: flex;
   width: 260px;
   padding-top: 25px;
+  padding-right: 30px;
   padding-bottom: 29px;
+  padding-left: 30px;
   text-decoration: none;
   color: $bg-white;
+  background-color: $bg-aqua;
+
+  &--toys {
+    background-color: #56c3b2;
+  }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
@@ -60,7 +63,7 @@
 
   &--interior::after {
     top: 20px;
-    right: 5px;
+    right: 35px;
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
@@ -68,7 +71,7 @@
 
   &--toys::after {
     top: 20px;
-    right: -3px;
+    right: 28px;
     width: 60px;
     height: 60px;
     background-image: url("../img/icon-toy.svg");
@@ -125,6 +128,7 @@
   }
 
   .product-type__item {
+    position: relative;
     justify-content: flex-start;
     width: 50%;
   }
@@ -132,9 +136,22 @@
   .product-type__link {
     width: 100%;
     padding-top: 27px;
+    padding-right: 0;
     padding-bottom: 43px;
+    padding-left: 0;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 48px;
+    }
+
+    &:active {
+      position: static;
+      padding-bottom: 43px;
+    }
 
     &--interior::after {
       top: 30px;
@@ -184,6 +201,15 @@
 
   .product-type__link {
     padding-bottom: 38px;
+
+    &:hover {
+      padding-bottom: 43px;
+    }
+
+    &:active {
+      position: static;
+      padding-bottom: 38px;
+    }
 
     &--interior::after {
       right: 33px;

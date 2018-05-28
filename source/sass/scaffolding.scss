@@ -3,6 +3,7 @@
   src: local("Open Sans.ttf"),
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
@@ -12,6 +13,7 @@
   src: local("Open Sans Bold.ttf"),
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
@@ -38,20 +40,39 @@ body {
   clip: rect(0 0 0 0);
 }
 
-@keyframes bounce {
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: $text-title;
+  opacity: 0.7;
+}
+
+@keyframes show-up {
   0% {
-    transform: translateY(-2000px);
+    opacity: 0;
   }
 
-  70% {
-    transform: translateY(-47%);
+  20% {
+    opacity: 0.2;
   }
 
-  90% {
-    transform: translateY(-53%);
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
   }
 
   100% {
-    transform: translateY(-50%);
+    opacity: 1;
   }
 }

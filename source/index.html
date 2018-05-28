@@ -7,6 +7,8 @@
   <meta name="keywords" content="Вязание, рукоделие">
   <meta name="description" content="Интернет-магазин милых вещей для дома ручной работы">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script>document.createElement( "picture" );</script>
   <script src="js/picturefill.js" async></script>
@@ -189,19 +191,23 @@
       </div>
     </section>
     <section class="modal">
-      <h2 class="modal__title">Добваить в корзину</h2>
-      <p class="modal__content">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <input class="modal__input visually-hidden" id="size-s-field" name="size-s" type="checkbox" checked>
-        <label class="modal__label" for="size-s-field">S</label>
-        <input class="modal__input visually-hidden" id="size-m-field" name="size-m" type="checkbox">
-        <label class="modal__label" for="size-m-field">M</label>
-        <input class="modal__input visually-hidden" id="size-l-field" name="size-l" type="checkbox">
-        <label class="modal__label" for="size-l-field">L</label>
-        <button class="button button--modal modal__button" type="submit">Добавить</button>
-      </form>
+      <div class="overlay"></div>
+      <div class="modal__container">
+        <h2 class="modal__title">Добваить в корзину</h2>
+        <p class="modal__content">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="modal__input visually-hidden" id="size-s-field" name="size-s" type="checkbox" checked>
+          <label class="modal__label" for="size-s-field">S</label>
+          <input class="modal__input visually-hidden" id="size-m-field" name="size-m" type="checkbox">
+          <label class="modal__label" for="size-m-field">M</label>
+          <input class="modal__input visually-hidden" id="size-l-field" name="size-l" type="checkbox">
+          <label class="modal__label" for="size-l-field">L</label>
+          <button class="button button--modal modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
     <section class="modal-map">
+      <div class="overlay"></div>
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="modal-map__container"></div>
     </section>
@@ -251,7 +257,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAldXTkBz5wzGHFdLcgiuYc_aWkzd3Zv-Q&callback=initMap"></script>
 
 </body>

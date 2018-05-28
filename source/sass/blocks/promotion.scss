@@ -1,23 +1,10 @@
 .promotion {
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 45px;
   background-color: $bg-white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 320px;
-    height: 6px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-  }
 }
 
 .promotion__container {
@@ -25,6 +12,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -41px;
+    left: 0;
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
 }
 
 .promotion__title {
@@ -87,11 +86,6 @@
   .promotion {
     padding-top: 35px;
     padding-bottom: 63px;
-
-    &::after {
-      width: 768px;
-      height: 17px;
-    }
   }
 
   .promotion__container {
@@ -101,6 +95,14 @@
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    &::after {
+      bottom: -62px;
+      left: 0;
+      width: 768px;
+      height: 17px;
+      background-position: left -17px top;
+    }
   }
 
   .promotion__title {
@@ -160,15 +162,18 @@
   .promotion {
     padding-top: 120px;
     padding-bottom: 85px;
-
-    &::after {
-      width: 1050px;
-      height: 23px;
-    }
   }
 
   .promotion__container {
     width: 1050px;
+
+    &::after {
+      bottom: -90px;
+      left: 50px;
+      width: 1050px;
+      height: 23px;
+      background-position: left -20px top;
+    }
   }
 
   .promotion__title {

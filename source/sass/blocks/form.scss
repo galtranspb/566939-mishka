@@ -204,6 +204,18 @@
     border-radius: 50%;
   }
 
+  &--radio:hover + .form__label::before {
+    border-color: $bg-aqua;
+  }
+
+  &--radio:active + .form__label::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--radio:focus + .form__label::before {
+    border-color: $bg-aqua;
+  }
+
   &--checkbox:checked + .form__label::after {
     content: "";
     position: absolute;
@@ -214,6 +226,18 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &--checkbox:hover + .form__label::before {
+    border-color: $bg-aqua;
+  }
+
+  &--checkbox:active + .form__label::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--checkbox:focus + .form__label::before {
+    border-color: $bg-aqua;
   }
 }
 

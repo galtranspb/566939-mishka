@@ -1,25 +1,21 @@
 .modal-map {
-  position: fixed;
-  z-index: 3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
 
   &--show {
     display: block;
+    animation: show-up 0.1s;
   }
 }
 
 .modal-map__container {
+  position: fixed;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
   width: 320px;
   height: 457px;
-  // position: fixed;
-  // z-index: 10;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   background-color: $bg-gray;
+  transform: translate(-50%, -50%);
 }
 
 .modal-map__image {
